@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BOOKMARKER || Page accueil</title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="../CSS/output.css">
-
-  <!-- JAVASCRIPT -->
-  <script defer src="../JAVASCRIPT/header.js"></script>
-
-  <!-- Lien de la police d'icônes -->
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-</head>
-
-<body class="bg-violet">
-  <main>
-    <header class="bg-brown px-2 py-2">
+<header class="bg-brown px-2 py-2">
       <div class="container mx-auto flex justify-between items-center">
         <div class="flex items-center">
           <div><img src="../Images/Mobile/Logo.png" alt="Logo une main tenant un livre formant un coeur"></div>
@@ -68,20 +48,3 @@
     
     <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
     </header>
-<h2 class="font-rosarivo text-white">Bienvenue</h2>
-<div class="flex justify-center items-center">
-<img src="../Images/Mobile/Brand Logo.png" alt="">
-</div>
-
-<div class="bg-yellow">
-<p><span>Achetez</span>et <span>revendez</span> vos livres d'occasion en toute simplicité ! </p>
-
-<button class="bg-brown text-yellow">Vends maintenant</button>
-<a href="#" class="">Découvrez comment ça marche</a>
-</div>
-<img src="../Images/Index/Livres image présentation copie 1.png" alt="Livres image présentaiton avec halos lumineux" class="w-full">
-
-  </main>
-</body>
-
-</html>

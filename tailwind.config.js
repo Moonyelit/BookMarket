@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./FRONT-END/HTML/*.html", "./FRONT-END/PHP/**/*.php"],
+  content: ["./FRONT-END/**/*.{html,php,js}"],
   theme: {
     extend: {
       colors: {
@@ -17,6 +17,9 @@ module.exports = {
         rosario: ["Rosario", "sans-serif"],
         inter: ["Inter", "sans-serif"],
       },
+      boxShadow: {
+        '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.6)',
+      }
     },
   },
   plugins: [],
