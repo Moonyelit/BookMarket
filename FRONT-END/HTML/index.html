@@ -18,8 +18,8 @@
 
 <body class="bg-violet">
   <main>
-    <header class="bg-brown px-2 py-2 w-full fixed top-0 z-50 shadow-lg mb-4">
-      <div class="container mx-auto flex justify-between items-center w-full">
+    <header class="bg-brown px-2 py-2 w-full fixed top-0 z-50 shadow-headering ">
+      <div class="container mx-auto flex justify-between items-end w-full">
         <div class="flex items-center">
           <div><img src="../Images/Mobile/Logo.png" alt="Logo une main tenant un livre formant un coeur"></div>
           <div><img src="../Images/Mobile/Brand Logo.png" alt="BookMarket"></div>
@@ -32,7 +32,7 @@
           </span>
 
           <!-- Icône utilisateur -->
-          <span class="inline-flex items-center justify-center">
+          <span class="inline-flex items-center justify-center cursor-pointer" id="user-icon">
             <i class='bx bx-user-circle text-yellow text-2xl'></i>
           </span>
 
@@ -49,9 +49,35 @@
         </div>
       </div>
 
+      <!-- Formulaire de connexion -->
+      <div id="login-form"
+        class="fixed top-16 right-0 w-full max-w p-4 bg-brown text-yellow shadow-2xl hidden transition-transform transition-opacity duration-500">
+        <button id="close-login-form" class="absolute top-2 right-2 text-yellow">X</button>
+        <h2 class="text-xl mb-4">Connexion</h2>
+        <form>
+          <div class="mb-4">
+            <label for="username" class="block mb-2">Nom d'utilisateur</label>
+            <input type="text" id="username" class="w-full p-2 rounded" required>
+          </div>
+          <div class="mb-4">
+            <label for="password" class="block mb-2">Mot de passe</label>
+            <input type="password" id="password" class="w-full p-2 rounded" required>
+          </div>
+          <button type="submit" class="bg-yellow text-brown px-4 py-2 rounded">Se connecter</button>
+        </form>
+        <a href="#" class="block text-yellow underline mt-2">Pas encore inscrit ? Inscrivez-vous</a>
+      </div>
+
+      <!-- Option de déconnexion -->
+      <div id="logout-option"
+        class="fixed top-16 right-0 w-full max-w-sm p-4 bg-brown text-yellow shadow-lg hidden transition-transform transition-opacity duration-500">
+        <h2 class="text-xl mb-4">Déconnexion</h2>
+        <button id="logout-button" class="bg-yellow text-brown px-4 py-2 rounded">Se déconnecter</button>
+      </div>
+
       <!-- Menu latéral -->
       <nav id="menu"
-        class="fixed top-0 left-0 w-64 h-full bg-brown text-yellow font-bold p-4 transition-transform duration-500 transform -translate-x-full">
+        class="fixed top-0 left-0 w-64 h-full bg-brown text-yellow font-bold p-4 transition-transform duration-500 transform -translate-x-full shadow">
         <div class="flex items-center justify-center">
           <div><img src="../Images/Mobile/Logo.png" alt="Logo une main tenant un livre formant un coeur"></div>
           <div><img src="../Images/Mobile/Brand Logo.png" alt="BookMarket"></div>
@@ -72,54 +98,47 @@
 
 
     <!-- SECTION : PRESENTATION SITE -->
-    <section class="relative mt-24 overflow-hidden min-h-[500px]">
+    <section class="relative mt-24 flex justify-end items-end">
 
       <!-- Section texte -->
       <div class="flex flex-col w-3/5 z-10 h-full relative">
         <div class="p-4 ml-8">
           <h2 class="font-rosarivo text-white text-3xl mb-[-8px]">Bienvenue</h2>
-          <div class="flex justify-center items-center">
+          <h1 class="flex justify-center items-center">
             <img src="../Images/Mobile/Brand Logo.png" alt="">
-          </div>
+          </h1>
         </div>
-    
-        <div class="bg-yellow rounded-tr-63 p-4 leading-tight">
-          <p class="font-rosarivo w-[70%]">
+
+        <div class="bg-yellow rounded-tr-68 p-3 leading-[1rem] flex flex-col justify-center align-middle w-[0rem]">
+          <p class="font-rosarivo w-[70%] text-sm	leading-[1rem] mb-3  ">
             <span class="font-bold text-shadow-lg">Achetez </span>et
             <span class="font-bold text-shadow-lg">revendez</span> vos livres d'occasion en toute simplicité !
           </p>
           <div class="flex flex-col justify-center">
-            <button class="bg-brown text-yellow px-3 py-1 rounded-full w-[80%]">Vends maintenant</button>
+            <button class="bg-brown text-yellow px-3 py-1 rounded-full w-[80%] hover:bg-brown-600">Vends
+              maintenant</button>
             <a href="#" class="block text-[10px] underline mt-1">Découvrez comment ça marche</a>
           </div>
         </div>
       </div>
-    
+
       <!-- Image flottante -->
-      <img src="../Images/Index/Livres image présentation copie 1.png" 
-           alt="Livres image présentation avec halos lumineux" 
-           class="absolute top-[-5rem] right-0 w-[70%] max-w-[600px] h-auto z-0">
+      <img src="../Images/Index/Livres image présentation copie 1.png"
+        alt="Livres image présentation avec halos lumineux"
+        class="relative bottom-0 right-0 w-[70%] max-w-[600px] h-auto z-0">
     </section>
 
 
     <!-- SECTION 2 :  TOP DES VENTES -->
     <section class="relative h-screen bg-[url('../Images/Index/DECO-section2.png')] bg-cover bg-center bg-no-repeat">
       <!-- Contenu de la section -->
+      <h1></h1>
     </section>
-    
-
-
-
-
 
 
 
 
   </main>
 </body>
-<<<<<<< HEAD
-</html>i
-=======
 
 </html>
->>>>>>> index
