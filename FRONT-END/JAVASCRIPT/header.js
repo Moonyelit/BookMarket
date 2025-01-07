@@ -58,14 +58,18 @@ document.addEventListener('DOMContentLoaded', () => {
   function toggleSlide(element) {
     if (element.classList.contains('hidden')) {
       element.classList.remove('hidden');
-      element.classList.remove('-translate-y-full');
-      element.classList.add('translate-y-0');
+      requestAnimationFrame(() => {
+        element.classList.remove('-translate-y-full');
+        element.classList.add('translate-y-0');
+        element.classList.add('transition-transform', 'transition-opacity', 'duration-500');
+      });
     } else {
       element.classList.add('-translate-y-full');
       element.classList.remove('translate-y-0');
       setTimeout(() => {
         element.classList.add('hidden');
-      }, 300); // Délai correspondant à la durée de l'animation
+        element.classList.remove('transition-transform', 'transition-opacity', 'duration-500');
+      }, 500); // Délai correspondant à la durée de l'animation
     }
   }
 });
