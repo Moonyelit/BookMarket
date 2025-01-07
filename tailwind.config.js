@@ -1,6 +1,6 @@
-/** @type {import('tailwindcss').Config} */
+// filepath: /c:/wamp64/www/Fil Rouge/tailwind.config.js
 module.exports = {
-  content: ["./FRONT-END/HTML/*.html", "./FRONT-END/PHP/**/*.php"],
+  content: ["./FRONT-END/**/*.{html,php,js}"],
   theme: {
     extend: {
       colors: {
@@ -17,7 +17,18 @@ module.exports = {
         rosario: ["Rosario", "sans-serif"],
         inter: ["Inter", "sans-serif"],
       },
+      boxShadow: {
+        sm: "1px 1px 2px rgba(0, 0, 0, 0.5)",
+        DEFAULT: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+        lg: "3px 3px 6px rgba(0, 0, 0, 0.5)",
+        "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.6)",
+      },
+      borderRadius: {
+        'tr-63': '0 63% 0 0', 
+      },
     },
   },
-  plugins: [],
-}
+  plugins: [
+    require("tailwindcss-textshadow"),
+  ],
+};
