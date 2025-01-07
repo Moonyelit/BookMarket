@@ -22,9 +22,10 @@ module.exports = {
         DEFAULT: "2px 2px 4px rgba(0, 0, 0, 0.5)",
         lg: "3px 3px 6px rgba(0, 0, 0, 0.5)",
         "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.6)",
+        headering: "-1px 11px 23px 6px rgba(0, 0, 0, 0.4)", 
       },
       borderRadius: {
-        'tr-63': '0 63% 0 0', 
+        'tr-68': '0 68% 0 0', 
       },
     },
   },
