@@ -1,15 +1,19 @@
-// filepath: /c:/wamp64/www/Fil Rouge/tailwind.config.js
 module.exports = {
-  content: ["./FRONT-END/**/*.{html,php,js}"],
+  mode: "jit",
+  content: [
+    './**/*.html',
+    './**/*.js',
+  ],  
   theme: {
     extend: {
       colors: {
         black: "#121213",
+        'black-gray': "#414141"
         white: "#EAEAEA",
         violet: "#1C161E",
         yellow: "#EFE3C8",
         brown: "#704341",
-        "yellow-transparent": "rgba(239, 227, 200, 0.7)", // Jaune transparent à 70%
+        "yellow-transparent": "rgba(239, 227, 200, 0.7)",
       },
       fontFamily: {
         rosarivo: ["Rosarivo", "serif"],
