@@ -1,0 +1,45 @@
+    /* Ajout de styles pour le footer */
+    footer {
+        position: relative;
+        overflow: hidden;
+      }
+  
+      footer .scale-125 {
+        transform: scale(1.2);
+        /* Ajuste le niveau de zoom */
+        transition: none;
+        /* Désactive toute animation au changement de taille */
+      }
+  
+      footer img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+  
+      /* Animation pour l'ouverture et la fermeture des sections */
+      .transition-height {
+        transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        opacity: 0;
+      }
+  
+      .collapsible {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+        padding: 0 1rem;
+        opacity: 0;
+      }
+  
+      .collapsible.open {
+        max-height: 200px;
+        /* Ajuste cette valeur en fonction du contenu */
+        opacity: 1;
+        padding: 1rem;
+      }
+  
+      /* Animation pour la rotation de l'icône de flèche */
+      .rotate-180 {
+        transform: rotate(180deg);
+        transition: transform 0.3s ease-in-out;
+      }

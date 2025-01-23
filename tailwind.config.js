@@ -29,9 +29,6 @@ module.exports = {
         "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.6)",
         headering: "-1px 11px 23px 6px rgba(0, 0, 0, 0.4)", 
       },
-      borderRadius: {
-        'tr-68': '0 68% 0 0', 
-      },
       textShadow: {
         'xl': '2px 2px 4px rgba(0, 0, 0, 0.8)',
       },

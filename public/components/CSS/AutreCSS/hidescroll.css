@@ -5,3 +5,10 @@
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }
+
+/* 
+  .proportional-box {
+  width: 80%;
+  max-width: 500px;
+  aspect-ratio: 2 / 1;
+} */

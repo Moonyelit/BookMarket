@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <!-- Métadonnées et liens CSS -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BOOKMARKET || Page accueil</title>
@@ -9,42 +10,29 @@
   <!-- CSS -->
   <link rel="stylesheet" href="./components/CSS/output.css">
   <link rel="stylesheet" href="./components/CSS/AutreCSS/hidescroll.css">
+  <link rel="stylesheet" href="./components/CSS/AutreCSS/footer.css">
 
   <!-- JAVASCRIPT -->
   <script defer src="./components/Javascript/header.js"></script>
+  <script defer src="./components/Javascript/footer.js"></script>
 
   <!-- Lien de la police d'icônes -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-  <style>
-    /* Ajout de styles pour le footer */
-    footer {
-  position: relative;
-  overflow: hidden;
-}
 
-footer .scale-125 {
-  transform: scale(1.2); /* Ajuste le niveau de zoom */
-  transition: none; /* Désactive toute animation au changement de taille */
-}
-
-footer img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-  </style>
 </head>
 
 
 <body class="bg-violet">
-<?php include_once './header.php'; ?>
+
+  <!-- Inclusion de l'en-tête -->
+  <?php include_once './reusable/header.php'; ?>
+
   <main>
     <!-- SECTION : PRESENTATION SITE -->
     <section class="relative flex justify-end items-end" style="margin-top: 5rem;">
 
       <!-- Section texte -->
-      <div class="flex flex-col w-3/5 z-10 h-full">
+      <div class="flex flex-col w-3/5 z-10 h-full" style="padding-left: 0rem;">
         <div class="p-4 ml-8">
           <h2 class="font-rosarivo text-white text-3xl mb-[-8px]">Bienvenue</h2>
           <h1 class="flex justify-center items-center">
@@ -52,15 +40,15 @@ footer img {
           </h1>
         </div>
 
-        <div class="bg-yellow rounded-tr-68 p-3 leading-[1rem] flex flex-col justify-center align-middle w-[130%]">
-          <p class="font-rosarivo w-full text-sm leading-[1rem] my-3 pr-7">
+        <div class="bg-yellow p-4 flex flex-col justify-center align-middle w-[100%] "
+     style="border-top-right-radius: 63%;">
+          <p class="font-rosarivo w-full text-sm leading-[2rem]" style="margin: 1rem 0;">
             <span class="font-bold text-shadow-lg">Achetez </span>et
             <span class="font-bold text-shadow-lg">revendez</span> vos livres d'occasion en toute simplicité !
           </p>
           <div class="flex flex-col justify-center">
-            <button class="bg-brown text-yellow px-3 py-1 rounded-full w-[80%] 
-            hover:bg-violet hover:text-brown 
-            transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
+            <button
+              class="bg-brown text-yellow px-3 py-1 rounded-full w-[80%] hover:bg-violet hover:text-brown transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
               Vends maintenant
             </button>
 
@@ -285,6 +273,7 @@ footer img {
 
     <!-- SECTION 3 :  NOTRE SELECTION DE LIVRES -->,
     <section class="py-6">
+      <!-- Titre de la section -->
       <h1 class="text-yellow text-[1.2rem] font-rosarivo ml-4 text-shadow-xl">Notre sélection de livres</h1>
 
       <!-- Mes Boutons selections de livres -->
@@ -748,96 +737,9 @@ footer img {
   </main>
 
 
-    <!-- FOOTER -->
-    <footer class="relative">
-        <!-- Image de fond -->
-        <img src="./assets/Images/Fond/Newspaper.png" class="absolute top-0 left-0 w-full h-[28rem] object-cover scale-10" 
-        alt="Fond">
-  
-        <!-- Contenu superposé -->
-        <footer class="relative">
-          <!-- Image de fond -->
-          <img src="./assets/Images/Fond/Newspaper.png" class="absolute top-0 left-0 w-full h-[28rem] object-cover scale-10" 
-          alt="Fond">
-      
-     <!-- Contenu superposé -->
-     <div class="relative flex flex-col py-1 text-black font-rosarivo" style="margin-top: 4rem;">
-      <div class="border-t-2 border-black py-4">
-          <div class="mb-4">
-              <button class="flex justify-between w-full items-center text-2xl font-bold" onclick="toggleSection('about')">
-                  A PROPOS <i id="arrow-about" class='bx bx-chevron-down'></i>
-              </button>
-              <div id="about" class="hidden mt-2 text-sm">
-                  <p>BookMarket est la plateforme qui offre une seconde vie à vos livres.</p>
-                  <p>Notre mission est de revaloriser les livres d’occasion en proposant à chacun un service simple et transparent.</p>
-              </div>
-          </div>
-          <div class="mb-4">
-              <button class="flex justify-between w-full items-center text-2xl font-bold" onclick="toggleSection('links')">
-                  LIENS IMPORTANTS <i id="arrow-links" class='bx bx-chevron-down'></i>
-              </button>
-              <div id="links" class="hidden mt-2 text-sm">
-                  <ul class="list-disc pl-5">
-                      <li>Vendre ses livres</li>
-                      <li>A propos</li>
-                      <li>Comment acheter des livres d'occasion</li>
-                      <li>Livres d'occasion</li>
-                      <li>Blog</li>
-                      <li>Aide</li>
-                  </ul>
-              </div>
-          </div>
-          <div class="mb-4">
-              <button class="flex justify-between w-full items-center text-2xl font-bold" onclick="toggleSection('policies')">
-                  POLITIQUES <i id="arrow-policies" class='bx bx-chevron-down'></i>
-              </button>
-              <div id="policies" class="hidden mt-2 text-sm">
-                  <ul class="list-disc pl-5">
-                      <li>Conditions Générales</li>
-                      <li>Mentions Légales</li>
-                      <li>Politique de Confidentialité</li>
-                      <li>Politique d'Expédition</li>
-                      <li>Retours et remboursements</li>
-                  </ul>
-              </div>
-          </div>
-          <div class="flex justify-between mt-6 text-sm">
-              <p>&copy; 2024 BookMarket<br>Paris, France</p>
-              <div>
-                  <span>Nous suivre</span>
-                  <i class='bx bxl-facebook text-xl mx-1'></i>
-                  <i class='bx bxl-twitter text-xl mx-1'></i>
-                  <i class='bx bxl-instagram text-xl mx-1'></i>
-              </div>
-              <div>
-                  <span>Nous acceptons</span>
-                  <img src="visa-logo.png" class="inline w-8">
-                  <img src="mastercard-logo.png" class="inline w-8">
-              </div>
-          </div>
-      </div>
-  </div>
-</footer>
+  <!-- Inclusion du footer-->
+  <?php include_once './reusable/footer.php'; ?>
 
-<script>
-  function toggleSection(section) {
-      const sections = ['about', 'links', 'policies'];
-      sections.forEach(sec => {
-          if (sec === section) {
-              document.getElementById(sec).classList.toggle('hidden');
-              let arrow = document.getElementById('arrow-' + sec);
-              arrow.classList.toggle('bx-chevron-down');
-              arrow.classList.toggle('bx-chevron-up');
-          } else {
-              document.getElementById(sec).classList.add('hidden');
-              document.getElementById('arrow-' + sec).classList.remove('bx-chevron-up');
-              document.getElementById('arrow-' + sec).classList.add('bx-chevron-down');
-          }
-      });
-  }
-</script>
-
-  
 </body>
 
 </html>
