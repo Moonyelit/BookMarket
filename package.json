@@ -1,6 +1,6 @@
 {
  "scripts": {
-  "build:css": "npx tailwindcss -i ./FRONT-END/CSS/style.css -o ./FRONT-END/CSS/output.css --watch"
+  "build:css": "npx tailwindcss -i ./public/components/CSS/style.css -o ./public/components/CSS/output.css --watch"
  },
  "name": "fil-rouge",
  "version": "1.0.0",

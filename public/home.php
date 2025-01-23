@@ -7,10 +7,10 @@
   <title>BOOKMARKER || Page accueil</title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="../CSS/output.css">
+  <link rel="stylesheet" href="./components/CSS/output.css">
 
   <!-- JAVASCRIPT -->
-  <script defer src="../JAVASCRIPT/header.js"></script>
+  <script defer src="./components/Javascript/header.js"></script>
 
   <!-- Lien de la police d'icônes -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
@@ -24,8 +24,8 @@
     <header class="bg-brown px-2 py-2 w-full fixed top-0 z-50 shadow-headering">
       <div class="container mx-auto flex justify-between w-full">
         <div class="flex items-center">
-          <div><img src="../Images/Mobile/Logo.png" alt="Logo une main tenant un livre formant un coeur"></div>
-          <div><img src="../Images/Mobile/Brand Logo.png" alt="BookMarket"></div>
+          <div><img src="./assets/Images/Mobile/Logo.png" alt="Logo une main tenant un livre formant un coeur"></div>
+          <div><img src="./assets/Images/Mobile/Brand Logo.png" alt="BookMarket"></div>
         </div>
 
         <div class="flex space-x-3 items-center">
@@ -82,8 +82,8 @@
       <nav id="menu"
         class="fixed top-0 left-0 w-64 h-full bg-brown text-yellow font-bold p-4 transition-transform duration-500 transform -translate-x-full shadow">
         <div class="flex items-center justify-center">
-          <div><img src="../Images/Mobile/Logo.png" alt="Logo une main tenant un livre formant un coeur"></div>
-          <div><img src="../Images/Mobile/Brand Logo.png" alt="BookMarket"></div>
+          <div><img src="./assets/Images/Mobile/Logo.png" alt="Logo une main tenant un livre formant un coeur"></div>
+          <div><img src="./assets/Images/Mobile/Brand Logo.png" alt="BookMarket"></div>
         </div>
 
         <hr class="border-t-2 border-yellow my-4">
@@ -109,7 +109,7 @@
         <div class="p-4 ml-8">
           <h2 class="font-rosarivo text-white text-3xl mb-[-8px]">Bienvenue</h2>
           <h1 class="flex justify-center items-center">
-            <img src="../Images/Mobile/Brand Logo.png" alt="">
+            <img src="./assets/Images/Mobile/Brand Logo.png" alt="">
           </h1>
         </div>
 
@@ -127,7 +127,7 @@
       </div>
 
       <!-- Image flottante -->
-      <img src="../Images/Index/Livres image présentation copie 1.png"
+      <img src="./assets/Images/Index/Livres image présentation copie 1.png"
         alt="Livres image présentation avec halos lumineux"
         class="relative bottom-0 right-0 w-[70%] max-w-[600px] h-auto z-0">
     </section>
@@ -136,13 +136,12 @@
     <!-- SECTION 2 :  TOP DES VENTES -->
     <section class="mt-5 relative">
       <!-- Image de fond -->
-      <img src="/FRONT-END/Images/Index/DECO-section2.png" class="w-full h-[25rem]">
+      <img src="./assets/Images/Index/DECO-section2.png" class="w-full h-[25rem]">
 
       <!-- Contenu superposé -->
       <div class="absolute inset-0 flex flex-col">
         <!-- Titre de la section -->
-        <h1 class="text-white text-[1.2rem] font-bold mt-[2rem] ml-[1rem] font-rosarivo text-shadow-lg">
-          Top des ventes
+        <h1 class="text-white text-[1./assets/Images/
         </h1>
 
         <!-- Conteneur avec scroll horizontal -->
@@ -160,7 +159,7 @@
             </div>
 
             <!-- Image du livre -->
-            <img src="../Images/Livres/Palais-de-roses.jpg" alt="Un palais d'épines et de roses"
+            <img src="./assets/Images/Livres/Palais-de-roses.jpg" alt="Un palais d'épines et de roses"
               class="w-full h-auto rounded-md shadow-lg h-[6rem] w-auto">
 
             <!-- Titre du livre -->
@@ -170,7 +169,7 @@
 
             <!-- Encadré -->
             <div class="flex justify-center items-center gap-1 mt-1 bg-yellow rounded-full" style="padding: 1.2px;">
-              <img src="../Images/Cards-Livres/Langues/icon-french.png" alt="France" class="w-4 h-4 rounded-full">
+              <img src="./assets/Images/Cards-Livres/Langues/icon-french.png" alt="France" class="w-4 h-4 rounded-full">
               <i class='bx bx-book'></i>
               <span class="text-black font-rosarivo px-1 py-0.5 text-[7px] rounded-md">Livre relié</span>
             </div>
@@ -199,7 +198,7 @@
               ⭐ 4.8
             </div>
             <!-- Image du livre -->
-            <img src="../Images/Livres/Berserk.jpg" alt="Berserk Deluxe" class="w-full h-auto rounded-md shadow-lg h-[6rem] w-auto">
+            <img src="./assets/Images/Livres/Berserk.jpg" alt="Berserk Deluxe" class="w-full h-auto rounded-md shadow-lg h-[6rem] w-auto">
 
             <!-- Titre du livre -->
             <h2 class="text-white font-bold text-center mt-1 text-[8px] leading-tight">Berserk Deluxe</h2>
@@ -208,7 +207,7 @@
 
             <!-- Encadré -->
             <div class="flex justify-center items-center gap-1 mt-1 bg-yellow rounded-full" style="padding: 1.2px;">
-              <img src="../Images/Cards-Livres/Langues/icon-anglais.png" alt="France" class="w-4 h-4 rounded-full">
+              <img src="./assets/Images/Cards-Livres/Langues/icon-anglais.png" alt="France" class="w-4 h-4 rounded-full">
               <i class='bx bx-book'></i>
               <span class="text-black font-rosarivo px-1 py-0.5 text-[7px] rounded-md">Livre relié</span>
             </div>
@@ -237,7 +236,7 @@
               ⭐ 4.2
             </div>
             <!-- Image du livre -->
-            <img src="../Images/Livres/la femme de ménage.jpg" alt="La Femme de ménage "
+            <img src="./assets/Images/Livres/la femme de ménage.jpg" alt="La Femme de ménage "
               class="w-full h-auto rounded-md shadow-lg">
 
             <!-- Titre du livre -->
@@ -247,7 +246,7 @@
 
             <!-- Encadré -->
             <div class="flex justify-center items-center gap-1 mt-1 bg-yellow rounded-full" style="padding: 1.2px;">
-              <img src="../Images/Cards-Livres/Langues/icon-french.png" alt="France" class="w-4 h-4 rounded-full">
+              <img src="./assets/Images/Cards-Livres/Langues/icon-french.png" alt="France" class="w-4 h-4 rounded-full">
               <i class='bx bx-book'></i>
               <span class="text-black font-rosarivo px-1 py-0.5 text-[7px] rounded-md">Livre relié</span>
             </div>
@@ -276,7 +275,7 @@
               ⭐ 4.5 
             </div>
             <!-- Image du livre -->
-            <img src="../Images/Livres/Piliers de la Terre.jpg" alt="La Femme de ménage "
+            <img src="./assets/Images/Livres/Piliers de la Terre.jpg" alt="La Femme de ménage "
               class="w-full h-auto rounded-md shadow-lg">
 
             <!-- Titre du livre -->
@@ -286,7 +285,7 @@
 
             <!-- Encadré -->
             <div class="flex justify-center items-center gap-1 mt-1 bg-yellow rounded-full" style="padding: 1.2px;">
-              <img src="../Images/Cards-Livres/Langues/icon-french.png" alt="France" class="w-4 h-4 rounded-full">
+              <img src="./assets/Images/Cards-Livres/Langues/icon-french.png" alt="France" class="w-4 h-4 rounded-full">
               <i class='bx bx-book'></i>
               <span class="text-black font-rosarivo px-1 py-0.5 text-[7px] rounded-md">Livre poche</span>
             </div>

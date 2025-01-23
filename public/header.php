@@ -1,8 +1,8 @@
 <header class="bg-brown px-2 py-2">
       <div class="container mx-auto flex justify-between items-center">
         <div class="flex items-center">
-          <div><img src="../Images/Mobile/Logo.png" alt="Logo une main tenant un livre formant un coeur"></div>
-          <div><img src="../Images/Mobile/Brand Logo.png" alt="BookMarket"></div>
+          <div><img src="./assets/Images/Mobile/Logo.png" alt="Logo une main tenant un livre formant un coeur"></div>
+          <div><img src="./assets/Images/Mobile/Brand Logo.png" alt="BookMarket"></div>
         </div>
 
         <div class="flex space-x-3 items-center">
@@ -32,8 +32,8 @@
       <!-- Menu latéral -->
     <nav id="menu" class="fixed top-0 left-0 w-64 h-full bg-brown text-yellow font-bold p-4 transition-transform duration-500 transform -translate-x-full">
       <div class="flex items-center justify-center">
-        <div><img src="../Images/Mobile/Logo.png" alt="Logo une main tenant un livre formant un coeur"></div>
-        <div><img src="../Images/Mobile/Brand Logo.png" alt="BookMarket"></div>
+        <div><img src="./assets/Images/Mobile/Logo.png" alt="Logo une main tenant un livre formant un coeur"></div>
+        <div><img src="./assets/Images/Mobile/Brand Logo.png" alt="BookMarket"></div>
       </div>
 
       <hr class="border-t-2 border-yellow my-4">

@@ -3,12 +3,13 @@ module.exports = {
   content: [
     './**/*.html',
     './**/*.js',
+    './public/components/CSS/**/*.css',
   ],  
   theme: {
     extend: {
       colors: {
         black: "#121213",
-        'black-gray': "#414141"
+        'black-gray': "#414141",
         white: "#EAEAEA",
         violet: "#1C161E",
         yellow: "#EFE3C8",
