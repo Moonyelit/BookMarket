@@ -38,6 +38,7 @@ module.exports = {
     },
   },
   plugins: [
-    require("tailwindcss-textshadow"),
+    require("tailwindcss-textshadow"), //Donne une ombre aux textes extensions
+    require('tailwind-scrollbar-hide'), // Cache les barres de scroll
   ],
 };
