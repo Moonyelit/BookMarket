@@ -4,103 +4,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BOOKMARKER || Page accueil</title>
+  <title>BOOKMARKET || Page accueil</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="./components/CSS/output.css">
+  <link rel="stylesheet" href="./components/CSS/AutreCSS/hidescroll.css">
 
   <!-- JAVASCRIPT -->
   <script defer src="./components/Javascript/header.js"></script>
 
   <!-- Lien de la police d'icônes -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <style>
+    /* Ajout de styles pour le footer */
+    footer {
+  position: relative;
+  overflow: hidden;
+}
+
+footer .scale-125 {
+  transform: scale(1.2); /* Ajuste le niveau de zoom */
+  transition: none; /* Désactive toute animation au changement de taille */
+}
+
+footer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+  </style>
 </head>
 
 
 <body class="bg-violet">
+<?php include_once './header.php'; ?>
   <main>
-
-
-    <header class="bg-brown px-2 py-2 w-full fixed top-0 z-50 shadow-headering">
-      <div class="container mx-auto flex justify-between w-full">
-        <div class="flex items-center">
-          <div><img src="./assets/Images/Mobile/Logo.png" alt="Logo une main tenant un livre formant un coeur"></div>
-          <div><img src="./assets/Images/Mobile/Brand Logo.png" alt="BookMarket"></div>
-        </div>
-
-        <div class="flex space-x-3 items-center">
-          <!-- Icône de recherche -->
-          <span class="p-1 bg-yellow rounded-full inline-flex items-center justify-center w-6 h-6 shadow-3xl">
-            <i class='bx bx-search text-brown text-xl'></i>
-          </span>
-
-          <!-- Icône utilisateur -->
-          <span class="inline-flex items-center justify-center cursor-pointer" id="user-icon">
-            <i class='bx bx-user-circle text-yellow text-2xl'></i>
-          </span>
-
-          <!-- Icône panier -->
-          <span class="inline-flex items-center justify-center">
-            <i class='bx bxs-basket text-yellow text-2xl'></i>
-          </span>
-
-          <!-- Icône menu -->
-          <span class="inline-flex items-center justify-center cursor-pointer">
-            <i class='bx bx-menu text-yellow text-2xl transition-transform duration-300' id="menu-icon"></i>
-          </span>
-
-        </div>
-      </div>
-
-      <!-- Formulaire de connexion -->
-      <div id="login-form"
-        class="fixed top-16 right-0 w-full max-w p-4 bg-brown text-yellow shadow-2xl hidden transition-transform transition-opacity duration-500">
-        <button id="close-login-form" class="absolute top-2 right-2 text-yellow">X</button>
-        <h2 class="text-xl mb-4">Connexion</h2>
-        <form>
-          <div class="mb-4">
-            <label for="username" class="block mb-2">Nom d'utilisateur</label>
-            <input type="text" id="username" class="w-full p-2 rounded" required>
-          </div>
-          <div class="mb-4">
-            <label for="password" class="block mb-2">Mot de passe</label>
-            <input type="password" id="password" class="w-full p-2 rounded" required>
-          </div>
-          <button type="submit" class="bg-yellow text-brown px-4 py-2 rounded">Se connecter</button>
-        </form>
-        <a href="#" class="block text-yellow underline mt-2">Pas encore inscrit ? Inscrivez-vous</a>
-      </div>
-
-      <!-- Option de déconnexion -->
-      <div id="logout-option"
-        class="fixed top-16 right-0 w-full max-w-sm p-4 bg-brown text-yellow shadow-lg hidden transition-transform transition-opacity duration-500">
-        <h2 class="text-xl mb-4">Déconnexion</h2>
-        <button id="logout-button" class="bg-yellow text-brown px-4 py-2 rounded">Se déconnecter</button>
-      </div>
-
-      <!-- Menu latéral -->
-      <nav id="menu"
-        class="fixed top-0 left-0 w-64 h-full bg-brown text-yellow font-bold p-4 transition-transform duration-500 transform -translate-x-full shadow">
-        <div class="flex items-center justify-center">
-          <div><img src="./assets/Images/Mobile/Logo.png" alt="Logo une main tenant un livre formant un coeur"></div>
-          <div><img src="./assets/Images/Mobile/Brand Logo.png" alt="BookMarket"></div>
-        </div>
-
-        <hr class="border-t-2 border-yellow my-4">
-
-        <ul class="space-y-4">
-          <li><a href="#" class="block hover:underline">Accueil</a></li>
-          <li><a href="#" class="block hover:underline">À propos</a></li>
-          <li><a href="#" class="block hover:underline">Contact</a></li>
-          <li><a href="#" class="block hover:underline">Services</a></li>
-        </ul>
-      </nav>
-
-      <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
-    </header>
-
-
-
     <!-- SECTION : PRESENTATION SITE -->
     <section class="relative flex justify-end items-end" style="margin-top: 5rem;">
 
@@ -386,11 +325,10 @@
         </div>
       </div>
 
-
       <section class="mt-5 relative">
 
-        <!-- Conteneur avec scroll horizontal -->
-        <div class="flex overflow-x-auto gap-6 px-4 py-4">
+        <!-- Conteneur avec scroll horizontal 1 -->
+        <div class="flex overflow-x-auto gap-6 px-4 py-4 scrollbar-hide">
 
           <!-- Livre 1 -->
           <div
@@ -453,7 +391,7 @@
             <div
               class="absolute bg-yellow-400 bg-[#414141] bg-opacity-50 text-white text-[8px] px-1 py-1 rounded-md flex items-center"
               style="margin-top:-8px; margin-left:-9px; border-top-left-radius: 15px; border-bottom-right-radius: 15px;">
-              ⭐ 3  .8
+              ⭐ 3 .8
             </div>
             <!-- Image du livre -->
             <div class="w-[80px] h-[120px] mx-auto flex items-center justify-center">
@@ -462,7 +400,7 @@
             </div>
 
             <!-- Titre du livre -->
-            <h2 class="text-white font-bold text-center mt-1 text-[10px] leading-tight"> 
+            <h2 class="text-white font-bold text-center mt-1 text-[10px] leading-tight">
               Ikegai</h2>
             <!-- Auteur -->
             <p class="text-white text-[8px] text-center mt-0.5">
@@ -470,8 +408,7 @@
 
             <!-- Encadré -->
             <div class="flex justify-center items-center gap-1 mt-1 bg-yellow rounded-full" style="padding: 1.2px;">
-              <img src="./assets/Images/Cards-Livres/Langues/icon-french.png" alt="France"
-                class="w-4 h-4 rounded-full">
+              <img src="./assets/Images/Cards-Livres/Langues/icon-french.png" alt="France" class="w-4 h-4 rounded-full">
               <i class='bx bx-book'></i>
               <span class="text-black font-rosarivo px-1 py-0.5 text-[7px] rounded-md">Livre relié</span>
             </div>
@@ -480,7 +417,7 @@
               style="border-radius: 12.6px;">
               <!-- Prix -->
               <p class="text-white font-bold text-center text-sm mt-1">
-                 9,99€</p>
+                9,99€</p>
 
               <!-- Boutons -->
               <div class="flex justify-around mt-2">
@@ -594,20 +531,239 @@
             </div>
           </div>
 
+        </div>
+
+        <!-- Conteneur avec scroll horizontal 1 -->
+        <div class="flex overflow-x-auto gap-6 px-4 py-4 scrollbar-hide">
+
+          <!-- Livre 1 -->
+          <div
+            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-[230px] flex flex-col justify-between"
+            style="border-radius: 12.6px;">
+
+
+            <!-- Note -->
+            <div
+              class="absolute bg-yellow-400 bg-[#414141] bg-opacity-50 text-white text-[8px] px-1 py-1 rounded-md flex items-center"
+              style="margin-top:-8px; margin-left:-9px; border-top-left-radius: 15px; border-bottom-right-radius: 15px;">
+              ⭐ 3.3
+            </div>
+
+            <!-- Image du livre -->
+            <div class="w-[80px] h-[120px] mx-auto flex items-center justify-center">
+              <img src="./assets/Images/Livres/Accord-tolteque.jpg" alt="Les quatre accords toltèques"
+                class="w-full h-full rounded-md shadow-lg object-cover">
+            </div>
+
+            <!-- Titre du livre -->
+            <h2 class="text-white font-bold text-center mt-1 text-[10px] leading-tight">
+              Les quatre accords toltèques</h2>
+            <!-- Auteur -->
+            <p class="text-white text-[8px] text-center mt-0.5">
+              Don Miguel Ruiz</p>
+
+            <!-- Encadré -->
+            <div class="flex justify-center items-center gap-1 mt-1 bg-yellow rounded-full" style="padding: 1.2px;">
+              <img src="./assets/Images/Cards-Livres/Langues/icon-french.png" alt="France" class="w-4 h-4 rounded-full">
+              <i class='bx bx-book'></i>
+              <span class="text-black font-rosarivo px-1 py-0.5 text-[7px] rounded-md">
+                Livre broché</span>
+            </div>
+
+            <div class="relative bg-white bg-opacity-5 rounded-md backdrop-blur-md p-1 flex-shrink-0"
+              style="border-radius: 12.6px;">
+              <!-- Prix -->
+              <p class="text-white font-bold text-center text-sm mt-1">
+                3,99€</p>
+
+              <!-- Boutons -->
+              <div class="flex justify-around mt-2">
+                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center">
+                  <i class='bx bx-heart text-black text-lg'></i>
+                </button>
+                <button class="bg-yellow p-2 rounded-full w-6 h-6  flex items-center justify-center">
+                  <i class='bx bx-cart text-black text-lg'></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Livre 2 -->
+          <div
+            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-[230px] flex flex-col justify-between"
+            style="border-radius: 12.6px;">
+
+            <!-- Note -->
+            <div
+              class="absolute bg-yellow-400 bg-[#414141] bg-opacity-50 text-white text-[8px] px-1 py-1 rounded-md flex items-center"
+              style="margin-top:-8px; margin-left:-9px; border-top-left-radius: 15px; border-bottom-right-radius: 15px;">
+              ⭐ 4.1
+            </div>
+            <!-- Image du livre -->
+            <div class="w-[80px] h-[120px] mx-auto flex items-center justify-center">
+              <img src="./assets/Images/Livres/1984- anglais.jpg " alt="Ikegai"
+                class="w-full h-full rounded-md shadow-lg object-cover">
+            </div>
+
+            <!-- Titre du livre -->
+            <h2 class="text-white font-bold text-center mt-1 text-[10px] leading-tight">
+              1984</h2>
+            <!-- Auteur -->
+            <p class="text-white text-[8px] text-center mt-0.5">
+              George Orwell</p>
+
+            <!-- Encadré -->
+            <div class="flex justify-center items-center gap-1 mt-1 bg-yellow rounded-full" style="padding: 1.2px;">
+              <img src="./assets/Images/Cards-Livres/Langues/icon-french.png" alt="France" class="w-4 h-4 rounded-full">
+              <i class='bx bx-book'></i>
+              <span class="text-black font-rosarivo px-1 py-0.5 text-[7px] rounded-md">Livre relié</span>
+            </div>
+
+            <div class="relative bg-white bg-opacity-5 rounded-md backdrop-blur-md p-1 flex-shrink-0"
+              style="border-radius: 12.6px;">
+              <!-- Prix -->
+              <p class="text-white font-bold text-center text-sm mt-1">
+                3,99€</p>
+
+              <!-- Boutons -->
+              <div class="flex justify-around mt-2">
+                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center">
+                  <i class='bx bx-heart text-black text-lg'></i>
+                </button>
+                <button class="bg-yellow p-2 rounded-full w-6 h-6  flex items-center justify-center">
+                  <i class='bx bx-cart text-black text-lg'></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Livre 3 -->
+          <di v
+            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-[230px] flex flex-col justify-between"
+            style="border-radius: 12.6px;">
+
+            <!-- Note -->
+            <div
+              class="absolute bg-yellow-400 bg-[#414141] bg-opacity-50 text-white text-[8px] px-1 py-1 rounded-md flex items-center"
+              style="margin-top:-8px; margin-left:-9px; border-top-left-radius: 15px; border-bottom-right-radius: 15px;">
+              ⭐ 4.4
+            </div>
+            <div class="w-[80px] h-[120px] mx-auto flex items-center justify-center">
+              <img src="./assets/Images/Livres/le chien de pavlov.jpg" alt="Le chien de Pavlov"
+                class="w-full h-full rounded-md shadow-lg object-cover">
+            </div>
+
+            <!-- Titre du livre -->
+            <h2 class="text-white font-bold text-center mt-1 text-[10px] leading-tight">
+              Le chien de Pavlov </h2>
+            <!-- Auteur -->
+            <p class="text-white text-[8px] text-center mt-0.5">
+              Adam Hart-Davis</p>
+
+            <!-- Encadré -->
+            <div class="flex justify-center items-center gap-1 mt-1 bg-yellow rounded-full" style="padding: 1.2px;">
+              <img src="./assets/Images/Cards-Livres/Langues/icon-french.png" alt="France" class="w-4 h-4 rounded-full">
+              <i class='bx bx-book'></i>
+              <span class="text-black font-rosarivo px-1 py-0.5 text-[7px] rounded-md">
+                Livre relié</span>
+            </div>
+
+            <div class="relative bg-white bg-opacity-5 rounded-md backdrop-blur-md p-1 flex-shrink-0"
+              style="border-radius: 12.6px;">
+              <!-- Prix -->
+              <p class="text-white font-bold text-center text-sm mt-1">
+                17,99€</p>
+
+              <!-- Boutons -->
+              <div class="flex justify-around mt-2">
+                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center">
+                  <i class='bx bx-heart text-black text-lg'></i>
+                </button>
+                <button class="bg-yellow p-2 rounded-full w-6 h-6  flex items-center justify-center">
+                  <i class='bx bx-cart text-black text-lg'></i>
+                </button>
+              </div>
+            </div>
+          </di>
+
+          <!-- Livre 4 -->
+          <div
+            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-[230px] flex flex-col justify-between"
+            style="border-radius: 12.6px;">
+
+            <!-- Note -->
+            <div
+              class="absolute bg-yellow-400 bg-[#414141] bg-opacity-50 text-white text-[8px] px-1 py-1 rounded-md flex items-center"
+              style="margin-top:-8px; margin-left:-9px; border-top-left-radius: 15px; border-bottom-right-radius: 15px;">
+              ⭐ 3.9
+            </div>
+            <!-- Image du livre -->
+            <div class="w-[80px] h-[120px] mx-auto flex items-center justify-center">
+              <img src="./assets/Images/Livres/n'écoute que moi.jpg" alt="N'écoute que moi"
+                class="w-full h-full rounded-md shadow-lg object-cover">
+            </div>
+
+            <!-- Titre du livre -->
+            <h2 class="text-white font-bold text-center mt-1 text-[10px] leading-tight">
+              N'écoute que moi</h2>
+            <!-- Auteur -->
+            <p class="text-white text-[8px] text-center mt-0.5">
+              Victor Dixen
+            </p>
+
+            <!-- Encadré -->
+            <div class="flex justify-center items-center gap-1 mt-1 bg-yellow rounded-full" style="padding: 1.2px;">
+              <img src="./assets/Images/Cards-Livres/Langues/icon-french.png" alt="France" class="w-4 h-4 rounded-full">
+              <i class='bx bx-book'></i>
+              <span class="text-black font-rosarivo px-1 py-0.5 text-[7px] rounded-md">
+                Livre collector</span>
+            </div>
+
+            <div class="relative bg-white bg-opacity-5 rounded-md backdrop-blur-md p-1 flex-shrink-0"
+              style="border-radius: 12.6px;">
+              <!-- Prix -->
+              <p class="text-white font-bold text-center text-sm mt-1">
+                12,99€</p>
+
+              <!-- Boutons -->
+              <div class="flex justify-around mt-2">
+                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center">
+                  <i class='bx bx-heart text-black text-lg'></i>
+                </button>
+                <button class="bg-yellow p-2 rounded-full w-6 h-6  flex items-center justify-center">
+                  <i class='bx bx-cart text-black text-lg'></i>
+                </button>
+              </div>
+            </div>
+          </div>
 
         </div>
-        </div>
+
       </section>
 
 
     </section>
 
 
-
-
-
-
   </main>
+
+
+    <!-- FOOTER -->
+    <footer class="relative">
+        <!-- Image de fond -->
+        <img src="./assets/Images/Fond/Newspaper.png" class="absolute top-0 left-0 w-full h-[28rem] object-cover scale-10" 
+        alt="Fond">
+  
+        <!-- Contenu superposé -->
+        <div class="relative flex flex-col py-1 text-black font-rosarivo" style="margin-top: 4rem;">
+          <h1 class="text-2xl font-bold">A PROPOS</h1>
+          <p class="mt-2">BookMarket est la plateforme qui offre une seconde vie à vos livres.</p>
+      </div>
+
+    </footer>
+
+      
+  
 </body>
 
 </html>
