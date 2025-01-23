@@ -7,8 +7,8 @@
   <title>BOOKMARKER || Inscription</title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="../CSS/output.css">
-  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="./components/CSS/output.css">
+  <link rel="stylesheet" href="./components/CSS/style.css">
 
   <!-- JAVASCRIPT -->
   <script defer src="../JAVASCRIPT/register.js"></script>

@@ -3,8 +3,8 @@ module.exports = {
   content: [
     './**/*.html',
     './**/*.js',
-    './public/components/CSS/**/*.css',
-  ],  
+    './public/**/*.php', // Ajoutez cette ligne pour inclure les fichiers PHP
+  ],
   theme: {
     extend: {
       colors: {
@@ -31,6 +31,9 @@ module.exports = {
       },
       borderRadius: {
         'tr-68': '0 68% 0 0', 
+      },
+      textShadow: {
+        'xl': '2px 2px 4px rgba(0, 0, 0, 0.8)',
       },
     },
   },

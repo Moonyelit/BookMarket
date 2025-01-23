@@ -23,8 +23,6 @@ overlay.addEventListener('click', () => {
   });
 
 
-
-// BARRE DE CONNEXION
 // BARRE DE CONNEXION
 document.addEventListener('DOMContentLoaded', () => {
   const userIcon = document.getElementById('user-icon');
@@ -59,16 +57,17 @@ document.addEventListener('DOMContentLoaded', () => {
     if (element.classList.contains('hidden')) {
       element.classList.remove('hidden');
       requestAnimationFrame(() => {
-        element.classList.remove('-translate-y-full');
-        element.classList.add('translate-y-0');
-        element.classList.add('transition-transform', 'transition-opacity', 'duration-500');
+        element.style.transform = 'translateY(0)';
+        element.style.opacity = '1';
+        element.style.transition = 'transform 0.5s ease, opacity 0.5s ease';
       });
     } else {
-      element.classList.add('-translate-y-full');
-      element.classList.remove('translate-y-0');
+      element.style.transform = 'translateY(-100%)';
+      element.style.opacity = '0';
+      element.style.transition = 'transform 0.5s ease, opacity 0.5s ease';
       setTimeout(() => {
         element.classList.add('hidden');
-        element.classList.remove('transition-transform', 'transition-opacity', 'duration-500');
+        element.style.transition = '';
       }, 500); // Délai correspondant à la durée de l'animation
     }
   }
