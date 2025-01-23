@@ -45,7 +45,7 @@
         </div>
         <button type="submit" class="bg-yellow text-brown px-4 py-2 rounded">Se connecter</button>
       </form>
-      <a href="#" class="block text-yellow underline mt-2">Pas encore inscrit ? Inscrivez-vous</a>
+      <a href="./register.php" class="block text-yellow underline mt-2">Pas encore inscrit ? Inscrivez-vous</a>
     </div>
 
     <!-- Option de déconnexion -->

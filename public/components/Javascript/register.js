@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const roleSelect = document.getElementById('role');
   const additionalFields = document.getElementById('additional-fields');
   console.log('Page loaded with role:', roleSelect.value); // Debugging message
-  if (roleSelect.value === 'vendeur' || roleSelect.value === 'les-deux') {
+  if (roleSelect.value === 'les-deux') {
     additionalFields.classList.remove('hidden');
     console.log('Showing additional fields on load'); // Debugging message
   } else {

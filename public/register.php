@@ -22,8 +22,8 @@
     <main class="bg-violet p-6 min-h-screen flex items-center justify-center flex-col">
 
         <div class="text-center mb-4">
-            <div><img src="../Images/Logo-marron.png" alt="Logo une main tenant un livre formant un coeur" class="mx-auto"></div>
-            <div><img src="../Images/Mobile/Brand Logo.png" alt="BookMarket" class="mx-auto"></div>
+            <div><img src="./assets/Images/Logo-marron.png" alt="Logo une main tenant un livre formant un coeur" class="mx-auto"></div>
+            <div><img src="./assets/Images/Mobile/Brand Logo.png" alt="BookMarket" class="mx-auto"></div>
              <hr class="border-yellow my-4">
           </div>
 
@@ -91,7 +91,6 @@
         <label for="role" class="block text-yellow mb-1">Je suis</label>
         <select id="role" name="role" class="w-full p-2 rounded bg-white text-black" required>
           <option value="acheteur" <?php echo isset($_POST['role']) && $_POST['role'] === 'acheteur' ? 'selected' : ''; ?>>Acheteur</option>
-          <option value="vendeur" <?php echo isset($_POST['role']) && $_POST['role'] === 'vendeur' ? 'selected' : ''; ?>>Vendeur</option>
           <option value="les-deux" <?php echo isset($_POST['role']) && $_POST['role'] === 'les-deux' ? 'selected' : ''; ?>>Acheteur et Vendeur</option>
         </select>
       </div>

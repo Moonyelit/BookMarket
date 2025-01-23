@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Métadonnées et liens CSS -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOOKMARKET || Page accueil</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./components/CSS/output.css">
+  <link rel="stylesheet" href="./components/CSS/AutreCSS/footer.css">
+
+  <!-- JAVASCRIPT -->
+  <script defer src="./components/Javascript/header.js"></script>
+  <script defer src="./components/Javascript/footer.js"></script>
+
+  <!-- Lien de la police d'icônes -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-violet">
+
+  <!-- Inclusion de l'en-tête -->
+  <?php include_once './reusable/header.php'; ?>
+
+  <main>
+    <!-- SECTION : PRESENTATION SITE -->
+    <section class="bg-yellow p-6" style="margin: 5rem; border-radius: 10px ;">
+      <div class="flex justify-between items-center">
+      <div>
+        <ul class="font-rosarivo" style="line-height: 2;">
+          <li><span style="font-weight: bold;">Pseudo :</span> Matmar</li>
+          <li><span style="font-weight: bold;">Nom Prénom :</span> M. Martin Martin</li>
+          <li><span style="font-weight: bold;">Mail :</span> martin.matin@gmail.com </li>
+          <li><span style="font-weight: bold;">Numéro de téléphone :</span> 06 12 34 56 78</li>
+          <li><span style="font-weight: bold;">Adresse :</span> 12 rue des lilas 75020 Paris</li>
+        </ul>
+      </div>
+
+        <div class="relative flex flex-col items-center">
+          <div class="w-36 h-36 md:w-40 md:h-40 rounded-full overflow-hidden border-2 border-gray-500 shadow-lg">
+            <img src="https://via.placeholder.com/150" alt="Photo de profil" class="w-full h-full object-cover">
+          </div>
+      
+          <!-- Bouton Changer photo -->
+          <a href="#" class="absolute bottom-4 bg-white bg-opacity-55 text-center text-sm font-semibold text-gray-800 py-1 px-3 rounded-md hover:bg-opacity-75 transition duration-300">
+            Changer photo
+          </a>
+      
+          <!-- Lien Gérer mon compte -->
+          <a href="#" class="text-sm font-semibold mt-3 text-blue-600 hover:underline">
+            Gérer mon compte
+          </a>
+        </div>      </div>
+    </section>
+
+  </main>
+
+  <!-- Inclusion du footer-->
+  <?php include_once './reusable/footer.php'; ?>
+
+</body>
+
+</html>
