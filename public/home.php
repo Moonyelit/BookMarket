@@ -8,13 +8,13 @@
   <title>BOOKMARKET || Page accueil</title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="./components/CSS/output.css">
-  <link rel="stylesheet" href="./components/CSS/AutreCSS/hidescroll.css">
-  <link rel="stylesheet" href="./components/CSS/AutreCSS/footer.css">
+  <link rel="stylesheet" href="./assets/CSS/output.css">
+  <link rel="stylesheet" href="./assets/CSS/AutreCSS/hidescroll.css">
+  <link rel="stylesheet" href="./assets/CSS/AutreCSS/footer.css">
 
   <!-- JAVASCRIPT -->
-  <script defer src="./components/Javascript/header.js"></script>
-  <script defer src="./components/Javascript/footer.js"></script>
+  <script defer src="./assets/Javascript/header.js"></script>
+  <script defer src="./assets/Javascript/footer.js"></script>
 
   <!-- Lien de la police d'icônes -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
@@ -79,7 +79,7 @@
 
           <!-- Livre 1 -->
           <div
-            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-[230px] flex flex-col justify-between"
+            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between"
             style="border-radius: 12.6px;">
 
 
@@ -127,7 +127,7 @@
 
           <!-- Livre 2 -->
           <div
-            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-[230px] flex flex-col justify-between"
+            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between"
             style="border-radius: 12.6px;">
 
             <!-- Note -->
@@ -174,7 +174,7 @@
 
           <!-- Livre 3 -->
           <div
-            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-[230px] flex flex-col justify-between"
+            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between"
             style="border-radius: 12.6px;">
 
             <!-- Note -->
@@ -222,7 +222,7 @@
 
           <!-- Livre 4 -->
           <div
-            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-[230px] flex flex-col justify-between"
+            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between"
             style="border-radius: 12.6px;">
 
             <!-- Note -->
@@ -321,7 +321,7 @@
 
           <!-- Livre 1 -->
           <div
-            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-[230px] flex flex-col justify-between"
+            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between"
             style="border-radius: 12.6px;">
 
 
@@ -373,7 +373,7 @@
 
           <!-- Livre 2 -->
           <div
-            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-[230px] flex flex-col justify-between"
+            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between"
             style="border-radius: 12.6px;">
 
             <!-- Note -->
@@ -422,7 +422,7 @@
 
           <!-- Livre 3 -->
           <div
-            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-[230px] flex flex-col justify-between"
+            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between"
             style="border-radius: 12.6px;">
 
             <!-- Note -->
@@ -471,7 +471,7 @@
 
           <!-- Livre 4 -->
           <div
-            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-[230px] flex flex-col justify-between"
+            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between"
             style="border-radius: 12.6px;">
 
             <!-- Note -->
@@ -527,7 +527,7 @@
 
           <!-- Livre 1 -->
           <div
-            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-[230px] flex flex-col justify-between"
+            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between"
             style="border-radius: 12.6px;">
 
 
@@ -579,7 +579,7 @@
 
           <!-- Livre 2 -->
           <div
-            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-[230px] flex flex-col justify-between"
+            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between"
             style="border-radius: 12.6px;">
 
             <!-- Note -->
@@ -628,7 +628,7 @@
 
           <!-- Livre 3 -->
           <di v
-            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-[230px] flex flex-col justify-between"
+            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between"
             style="border-radius: 12.6px;">
 
             <!-- Note -->
@@ -677,7 +677,7 @@
 
           <!-- Livre 4 -->
           <div
-            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-[230px] flex flex-col justify-between"
+            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between"
             style="border-radius: 12.6px;">
 
             <!-- Note -->

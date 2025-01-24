@@ -1,9 +1,12 @@
 module.exports = {
   mode: "jit",
   content: [
-    './**/*.html',
-    './**/*.js',
-    './public/**/*.php', // Ajoutez cette ligne pour inclure les fichiers PHP
+    './public/*.html',
+    './public/**/*.html',
+    './public/**/*.js',
+    './public/**/**/*.html',
+    './public/**/*.php',
+    '!./node_modules/**/*',  // Exclure le dossier node_modules
   ],
   theme: {
     extend: {

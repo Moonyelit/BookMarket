@@ -8,12 +8,12 @@
   <title>BOOKMARKET || Page accueil</title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="./components/CSS/output.css">
-  <link rel="stylesheet" href="./components/CSS/AutreCSS/footer.css">
-
+  <link rel="stylesheet" href="./assets/CSS/output.css">
+  <link rel="stylesheet" href="./assets/CSS/AutreCSS/footer.css">
   <!-- JAVASCRIPT -->
-  <script defer src="./components/Javascript/header.js"></script>
-  <script defer src="./components/Javascript/footer.js"></script>
+  <script defer src="./assets/Javascript/header.js"></script>
+  <script defer src="./assets/Javascript/footer.js"></script>
+  <script defer src="./assets/Javascript/profil.js"></script>
 
   <!-- Lien de la police d'icônes -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
@@ -26,35 +26,144 @@
   <?php include_once './reusable/header.php'; ?>
 
   <main>
-    <!-- SECTION : PRESENTATION SITE -->
-    <section class="bg-yellow p-6" style="margin: 5rem; border-radius: 10px ;">
-      <div class="flex justify-between items-center">
-      <div>
-        <ul class="font-rosarivo" style="line-height: 2;">
-          <li><span style="font-weight: bold;">Pseudo :</span> Matmar</li>
-          <li><span style="font-weight: bold;">Nom Prénom :</span> M. Martin Martin</li>
-          <li><span style="font-weight: bold;">Mail :</span> martin.matin@gmail.com </li>
-          <li><span style="font-weight: bold;">Numéro de téléphone :</span> 06 12 34 56 78</li>
-          <li><span style="font-weight: bold;">Adresse :</span> 12 rue des lilas 75020 Paris</li>
-        </ul>
-      </div>
 
-        <div class="relative flex flex-col items-center">
-          <div class="w-36 h-36 md:w-40 md:h-40 rounded-full overflow-hidden border-2 border-gray-500 shadow-lg">
-            <img src="https://via.placeholder.com/150" alt="Photo de profil" class="w-full h-full object-cover">
+
+    <!-- SECTION : PROFIL STANDARD -->
+    <section class="bg-yellow p-6 m-[2rem] rounded-lg">
+      <div class="flex flex-col justify-between items-center md:flex-row">
+
+        <!-- PHOTO DE PROFIL ORDINATEUR -->
+        <div class="relative flex flex-col items-center  md:hidden">
+          <div
+            class="w-36 h-36 md:w-40 md:h-40 rounded-full overflow-hidden border-2 border-gray-500 shadow-lg relative">
+            <img src="assets/Images/Profil/Icone profil.png" alt="Photo de profil"
+              class="w-full h-full object-cover object-center">
+
+            <!-- Bouton Changer photo -->
+            <a href="#"
+              class="absolute top-[70%] left-1/2 transform w-full -translate-x-1/2 bg-white bg-opacity-55 text-center text-sm font-semibold text-violet py-1 !px-[8px] pb-8 rounded-md hover:bg-opacity-75 transition duration-300">
+              Changer photo
+            </a>
           </div>
-      
-          <!-- Bouton Changer photo -->
-          <a href="#" class="absolute bottom-4 bg-white bg-opacity-55 text-center text-sm font-semibold text-gray-800 py-1 px-3 rounded-md hover:bg-opacity-75 transition duration-300">
-            Changer photo
-          </a>
-      
-          <!-- Lien Gérer mon compte -->
-          <a href="#" class="text-sm font-semibold mt-3 text-blue-600 hover:underline">
+
+          <a href="#" class="text-sm font-semibold mt-3 underline text-brown hover:">
             Gérer mon compte
           </a>
-        </div>      </div>
+
+        </div>
+
+        <div>
+          <ul class="font-rosarivo text-[0.9rem]" style="line-height: 2;">
+            <li><span style="font-weight: bold;">Pseudo :</span> Matmar</li>
+            <li><span style="font-weight: bold;"> Status : </span> Vendeur et Acheteur </li>
+            <li><span style="font-weight: bold;">Nom Prénom :</span> M. Martin Martin</li>
+            <li><span style="font-weight: bold;">Mail :</span> martin.matin@gmail.com </li>
+            <li><span style="font-weight: bold;">Téléphone :</span> 06 12 34 56 78</li>
+            <li><span style="font-weight: bold;">Adresse :</span> 12 rue des lilas </li>
+            <li><span style="font-weight: bold;">Code postal :</span> 75020</li>
+            <li><span style="font-weight: bold;">Ville :</span> Paris</li>
+            <hr style="border: none; border-top: 1px solid #000; margin: 1rem 0;">
+            <li><span style="font-weight: bold;">Nom entreprise :</span> MartinMatin</li>
+            <li><span style="font-weight: bold;">Téléphone</span>06 12 34 56 78</li>
+            <li><span style="font-weight: bold;">Adresse :</span> Adresse Aléatoire </li>
+            <li><span style="font-weight: bold;">Code postal :</span> 75020</li>
+            <li><span style="font-weight: bold;">Ville :</span> Paris</li>
+
+          </ul>
+        </div>
+
+        <!-- PHOTO DE PROFIL ORDINATEUR -->
+        <div class="hidden md:block relative flex-col items-center text-center  ">
+          <div
+            class="w-36 h-36 md:w-40 md:h-40 rounded-full overflow-hidden border-2 border-gray-500 shadow-lg relative">
+            <img src="assets/Images/Profil/Icone profil.png" alt="Photo de profil"
+              class="w-full h-full object-cover object-center">
+
+            <!-- Bouton Changer photo -->
+            <a href="#"
+              class="absolute top-[70%] left-1/2 transform w-full -translate-x-1/2 bg-white bg-opacity-55 text-center text-sm font-semibold text-violet py-1 !px-[8px] pb-8 rounded-md hover:bg-opacity-75 transition duration-300">
+              Changer photo
+            </a>
+          </div>
+
+          <a href="#" class="text-sm font-semibold mt-3 underline text-brown hover:">
+            Gérer mon compte
+          </a>
+
+        </div>
+      </div>
     </section>
+
+
+    <!-- SECTION : VENDEUR -->
+    <section class="mt-5 relative m-5 ">
+
+      <div class="flex">
+        <h1 class="text-yellow mb-4 font-rosarivo font-bold mr-3">Mes Annonces</h1>
+        <i class='bx bx-chevron-up text-yellow border-yellow border-2 rounded-full h-[1.5rem] w-[1.5rem] bg-transparent text-center toggle-chevron'
+          style="line-height: 1.4rem; vertical-align: middle; transition: transform 0.3s;"></i>
+      </div>
+
+      <!-- MON CONTENU A CACHER -->
+      <div class="toggle-content ">
+        <!-- hidden -->
+
+        <!-- Premier fond blanc -->
+        <div class=" p-6 bg-white bg-opacity-10 rounded-lg">
+          <h2 class="text-yellow font-rosarivo font-semibold">En cours</h2>
+
+          <!-- Deuxieme fond blanc -->
+          <div class=" p-6 bg-white bg-opacity-5 rounded-lg relative inline-flex">
+
+            <!-- Conteneur avec scroll horizontal -->
+            <div class="flex gap-6 px-4 py-4 scrollbar-hide">
+
+          <!-- Livre 1 -->
+          <div
+            class="relative rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between"
+            style="border-radius: 12.6px;">
+
+            <!-- Image du livre -->
+            <div class="w-[80px] h-[120px] mx-auto flex items-center justify-center">
+              <img src="./assets/Images/Livres/Palais-de-roses.jpg" alt="Un palais d'épines et de roses"
+                class="w-full h-full rounded-md shadow-lg object-cover">
+            </div>
+
+            <!-- Titre du livre -->
+            <h2 class="text-yellow font-semibold text-center mt-1 text-[10px] leading-tight">Un palais d'épines</h2>
+            <!-- Auteur -->
+            <p class="text-white text-[8px] text-center mt-0.5">Sarah J. Maas</p>
+
+            <!-- Encadré -->
+            <div class="flex justify-center items-center gap-1 mt-1 bg-yellow rounded-full" style="padding: 1.2px;">
+              <img src="./assets/Images/Cards-Livres/Langues/icon-french.png" alt="France" class="w-4 h-4 rounded-full">
+              <span class="text-black font-rosarivo px-1 py-0.5 text-[8px] rounded-md">Etat : Très bon</span>
+            </div>
+
+            <div class="relative bg-white bg-opacity-5 rounded-md backdrop-blur-md p-1 flex-shrink-0 text-center"
+              style="border-radius: 12.6px;">
+
+              <!-- Prix -->
+              <p class="text-white font-bold text-center text-sm mt-1">12,99€</p>
+
+              <!-- Mise en ligne -->
+              <p class="text-[8px] text-white">
+                <span class="text-semi-bold">Mise en ligne :</span>
+               08/11/2024
+              </p>
+            </div>
+          </div>
+
+          <!-- Bouton d'ajout de livre -->
+           <button class="bg-transparent border-2 border-white rounded-lg w-[100px] h-[120px] flex items-center justify-center hover: "></button>
+           </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
 
   </main>
 

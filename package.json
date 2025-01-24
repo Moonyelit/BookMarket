@@ -1,6 +1,6 @@
 {
  "scripts": {
-  "build:css": "npx tailwindcss -i ./public/components/CSS/style.css -o ./public/components/CSS/output.css --watch"
+  "build:css": "npx tailwindcss -i ./public/assets/CSS/style.css -o ./public/assets/CSS/output.css --watch"
  },
  "name": "fil-rouge",
  "version": "1.0.0",
@@ -15,6 +15,7 @@
  "license": "ISC",
  "dependencies": {
   "autoprefixer": "^10.4.20",
-  "postcss": "^8.5.1"
+  "postcss": "^8.5.1",
+  "tailwind-scrollbar-hide": "^2.0.0"
  }
 }
