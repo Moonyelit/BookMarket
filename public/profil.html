@@ -64,7 +64,7 @@
             <li><span style="font-weight: bold;">Ville :</span> Paris</li>
             <hr style="border: none; border-top: 1px solid #000; margin: 1rem 0;">
             <li><span style="font-weight: bold;">Nom entreprise :</span> MartinMatin</li>
-            <li><span style="font-weight: bold;">Téléphone</span>06 12 34 56 78</li>
+            <li><span style="font-weight: bold;">Téléphone :</span>06 12 34 56 78</li>
             <li><span style="font-weight: bold;">Adresse :</span> Adresse Aléatoire </li>
             <li><span style="font-weight: bold;">Code postal :</span> 75020</li>
             <li><span style="font-weight: bold;">Ville :</span> Paris</li>
@@ -98,71 +98,328 @@
     <!-- SECTION : VENDEUR -->
     <section class="mt-5 relative m-5 ">
 
+
       <div class="flex">
         <h1 class="text-yellow mb-4 font-rosarivo font-bold mr-3">Mes Annonces</h1>
         <i class='bx bx-chevron-up text-yellow border-yellow border-2 rounded-full h-[1.5rem] w-[1.5rem] bg-transparent text-center toggle-chevron'
           style="line-height: 1.4rem; vertical-align: middle; transition: transform 0.3s;"></i>
       </div>
-
-      <!-- MON CONTENU A CACHER -->
+      <!-- MON CONTENU A CACHER -->hidden
       <div class="toggle-content ">
-        <!-- hidden -->
 
-        <!-- Premier fond blanc -->
-        <div class=" p-6 bg-white bg-opacity-10 rounded-lg">
-          <h2 class="text-yellow font-rosarivo font-semibold">En cours</h2>
+        <!-- EN COURS -->
+        <article style="margin-bottom: 1.5rem;">
 
-          <!-- Deuxieme fond blanc -->
-          <div class=" p-6 bg-white bg-opacity-5 rounded-lg relative inline-flex">
+          <!-- Premier fond blanc -->
+          <div class="px-6 pb-6 bg-white bg-opacity-10 rounded-lg">
+            <h2 class="text-yellow font-rosarivo font-semibold">En cours</h2>
 
-            <!-- Conteneur avec scroll horizontal -->
-            <div class="flex gap-6 px-4 py-4 scrollbar-hide">
+            <!-- Deuxieme fond blanc autour des images et infos -->
+            <div class="bg-white bg-opacity-5 rounded-lg  mx-auto p-6 flex items-center gap-6">
 
-          <!-- Livre 1 -->
-          <div
-            class="relative rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between"
-            style="border-radius: 12.6px;">
+              <div class="flex overflow-x-auto gap-6 px-4 py-4 scrollbar-hide">
 
-            <!-- Image du livre -->
-            <div class="w-[80px] h-[120px] mx-auto flex items-center justify-center">
-              <img src="./assets/Images/Livres/Palais-de-roses.jpg" alt="Un palais d'épines et de roses"
-                class="w-full h-full rounded-md shadow-lg object-cover">
-            </div>
+                <!-- Bouton d'ajout de livre aligné à droite -->
+                <button
+                  class="border-2 border-white rounded-lg w-[80px] h-[120px] flex items-center justify-center hover:bg-violet bg-opacity-30 transition">
+                  <i class='bx bx-plus text-white text-4xl'></i>
+                </button>
 
-            <!-- Titre du livre -->
-            <h2 class="text-yellow font-semibold text-center mt-1 text-[10px] leading-tight">Un palais d'épines</h2>
-            <!-- Auteur -->
-            <p class="text-white text-[8px] text-center mt-0.5">Sarah J. Maas</p>
 
-            <!-- Encadré -->
-            <div class="flex justify-center items-center gap-1 mt-1 bg-yellow rounded-full" style="padding: 1.2px;">
-              <img src="./assets/Images/Cards-Livres/Langues/icon-french.png" alt="France" class="w-4 h-4 rounded-full">
-              <span class="text-black font-rosarivo px-1 py-0.5 text-[8px] rounded-md">Etat : Très bon</span>
-            </div>
+                <!-- Livre 1 -->
+                <div class="flex flex-col items-center w-[100px] text-center ">
+                  <!-- Image du livre -->
+                  <div class="w-[80px] h-[120px] flex-shrink-0">
+                    <img src="./assets/Images/Livres/Palais-de-roses.jpg" alt="Un palais d'épines et de roses"
+                      class="w-full h-full rounded-md shadow-lg object-cover">
+                  </div>
 
-            <div class="relative bg-white bg-opacity-5 rounded-md backdrop-blur-md p-1 flex-shrink-0 text-center"
-              style="border-radius: 12.6px;">
+                  <!-- Informations du livre -->
+                  <h2 class="text-yellow font-semibold text-center mt-2 text-[10px] leading-tight">Un palais d'épines et
+                    de roses</h2>
+                  <p class="text-white text-[8px] text-center mt-0.5">Sarah J. Maas</p>
+                  <div class="flex justify-center items-center gap-1 mt-1 bg-yellow rounded-full px-2 py-1">
+                    <img src="./assets/Images/Cards-Livres/Langues/icon-french.png" alt="France"
+                      class="w-4 h-4 rounded-full">
+                    <span class="text-black font-rosarivo text-[8px] rounded-md">Etat : Très bon</span>
+                  </div>
+                  <p class="text-white font-bold text-center text-sm mt-1">12,99€</p>
+                  <p class="text-[8px] text-white">
+                    <span class="text-semi-bold">Mise en ligne :</span> 08/11/2024
+                  </p>
+                </div>
 
-              <!-- Prix -->
-              <p class="text-white font-bold text-center text-sm mt-1">12,99€</p>
+                <!-- Livre 2 (Exemple) -->
+                <div class="flex flex-col items-center w-[100px] text-center">
+                  <!-- Image du livre -->
+                  <div class="w-[80px] h-[120px] flex-shrink-0">
+                    <img src="./assets/Images/Livres/1984.jpg" alt="1984"
+                      class="w-full h-full rounded-md shadow-lg object-cover">
+                  </div>
 
-              <!-- Mise en ligne -->
-              <p class="text-[8px] text-white">
-                <span class="text-semi-bold">Mise en ligne :</span>
-               08/11/2024
-              </p>
+                  <!-- Informations du livre -->
+                  <h2 class="text-yellow font-semibold text-center mt-2 text-[10px] leading-tight">1984</h2>
+                  <p class="text-white text-[8px] text-center mt-0.5">George Orwell</p>
+                  <div class="flex justify-center items-center gap-1 mt-1 bg-yellow rounded-full px-2 py-1">
+                    <img src="./assets/Images/Cards-Livres/Langues/icon-french.png" alt="France"
+                      class="w-4 h-4 rounded-full">
+                    <span class="text-black font-rosarivo text-[8px] rounded-md">Etat : Acceptable</span>
+                  </div>
+                  <p class="text-white font-bold text-center text-sm mt-1">2,99€</p>
+                  <p class="text-[8px] text-white">
+                    <span class="text-semi-bold">Mise en ligne :</span> 11/10/2024
+                  </p>
+                </div>
+
+                <!-- Livre 3 -->
+                <div class="flex flex-col items-center w-[100px] text-center ">
+                  <!-- Image du livre -->
+                  <div class="w-[80px] h-[120px] flex-shrink-0">
+                    <img src="./assets/Images/Livres/Kevin.jpg" alt="Il faut qu'on parle de Kevin"
+                      class="w-full h-full rounded-md shadow-lg object-cover">
+                  </div>
+
+                  <!-- Informations du livre -->
+                  <h2 class="text-yellow font-semibold text-center mt-2 text-[10px] leading-tight">Il faut qu'on parle
+                    de Kevin</h2>
+                  <p class="text-white text-[8px] text-center mt-0.5">Lionel Shriver</p>
+                  <div class="flex justify-center items-center gap-1 mt-1 bg-yellow rounded-full px-2 py-1">
+                    <img src="./assets/Images/Cards-Livres/Langues/icon-french.png" alt="France"
+                      class="w-4 h-4 rounded-full">
+                    <span class="text-black font-rosarivo text-[8px] rounded-md">Etat : Bon</span>
+                  </div>
+                  <p class="text-white font-bold text-center text-sm mt-1">6,99€</p>
+                  <p class="text-[8px] text-white">
+                    <span class="text-semi-bold">Mise en ligne :</span> 11/11/2024
+                  </p>
+                </div>
+
+                <!-- Livre 4 -->
+                <div class="flex flex-col items-center w-[100px] text-center ">
+                  <!-- Image du livre -->
+                  <div class="w-[80px] h-[120px] flex-shrink-0">
+                    <img src="./assets/Images/Livres/Fatherland.jpg" alt="Fatherland"
+                      class="w-full h-full rounded-md shadow-lg object-cover">
+                  </div>
+
+                  <!-- Informations du livre -->
+                  <h2 class="text-yellow font-semibold text-center mt-2 text-[10px] leading-tight">
+                    Fatherland</h2>
+                  <p class="text-white text-[8px] text-center mt-0.5">Robert Harris</p>
+                  <div class="flex justify-center items-center gap-1 mt-1 bg-yellow rounded-full px-2 py-1">
+                    <img src="./assets/Images/Cards-Livres/Langues/icon-french.png" alt="France"
+                      class="w-4 h-4 rounded-full">
+                    <span class="text-black font-rosarivo text-[8px] rounded-md">Etat : Bon</span>
+                  </div>
+                  <p class="text-white font-bold text-center text-sm mt-1">6,99€</p>
+                  <p class="text-[8px] text-white">
+                    <span class="text-semi-bold">Mise en ligne :</span> 11/11/2024
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
+        </article>
 
-          <!-- Bouton d'ajout de livre -->
-           <button class="bg-transparent border-2 border-white rounded-lg w-[100px] h-[120px] flex items-center justify-center hover: "></button>
-           </button>
+
+         <!-- VOS VENTES -->
+         <article style="margin-bottom: 1.5rem;">
+
+          <!-- Premier fond blanc -->
+          <div class="px-6 pb-6 bg-white bg-opacity-10 rounded-lg">
+            <h2 class="text-yellow font-rosarivo font-semibold">Vos ventes</h2>
+
+            <!-- Deuxieme fond blanc autour des images et infos -->
+            <div class="bg-white bg-opacity-5 rounded-lg relative mx-auto p-6 flex items-center gap-6">
+
+              <div class="flex overflow-x-auto gap-6 px-4 py-4 scrollbar-hide">
+
+                <!-- Bouton d'ajout de livre aligné à droite -->
+                <button
+                  class="border-2 border-white rounded-lg w-[80px] h-[120px] flex items-center justify-center hover:bg-violet bg-opacity-30 transition">
+                  <i class='bx bx-plus text-white text-4xl'></i>
+                </button>
+
+
+                <!-- Livre 1 -->
+                <div class="flex flex-col items-center w-[100px] text-center ">
+                  <!-- Image du livre -->
+                  <div class="w-[80px] h-[120px] flex-shrink-0">
+                    <img src="./assets/Images/Livres/Piliers de la Terre.jpg" alt="Les piliers de la Terre"
+                      class="w-full h-full rounded-md shadow-lg object-cover">
+                  </div>
+
+                  <!-- Informations du livre -->
+                  <h2 class="text-yellow font-semibold text-center mt-2 text-[10px] leading-tight">Les piliers de la Terre</h2>
+                  <p class="text-white text-[8px] text-center mt-0.5">Ken Follet</p>
+                  <div class="flex justify-center items-center gap-1 mt-1 bg-yellow rounded-full px-2 py-1">
+                    <img src="./assets/Images/Cards-Livres/Langues/icon-french.png" alt="France"
+                      class="w-4 h-4 rounded-full">
+                    <span class="text-black font-rosarivo text-[8px] rounded-md">Etat : Très bon</span>
+                  </div>
+                  <p class="text-white font-bold text-center text-sm mt-1">7,99€</p>
+                  <p class="text-[8px] text-white">
+                    <span class="text-semi-bold">Acheté:</span> 08/11/2024
+                  </p>
+                </div>
+
+                <!-- Livre 2 -->
+                <div class="flex flex-col items-center w-[100px] text-center">
+                  <!-- Image du livre -->
+                  <div class="w-[80px] h-[120px] flex-shrink-0">
+                    <img src="./assets/Images/Livres/Meilleure-monde.jpg" alt="Le meilleur des mondes"
+                      class="w-full h-full rounded-md shadow-lg object-cover">
+                  </div>
+
+                  <!-- Informations du livre -->
+                  <h2 class="text-yellow font-semibold text-center mt-2 text-[10px] leading-tight">Le meilleur des mondes</h2>
+                  <p class="text-white text-[8px] text-center mt-0.5">Adlous Huxley</p>
+                  <div class="flex justify-center items-center gap-1 mt-1 bg-yellow rounded-full px-2 py-1">
+                    <img src="./assets/Images/Cards-Livres/Langues/icon-french.png" alt="France"
+                      class="w-4 h-4 rounded-full">
+                    <span class="text-black font-rosarivo text-[8px] rounded-md">Etat : Acceptable</span>
+                  </div>
+                  <p class="text-white font-bold text-center text-sm mt-1">2,99€</p>
+                  <p class="text-[8px] text-white">
+                    <span class="text-semi-bold">Acheté le:</span> 06/10/2024
+                  </p>
+                </div>
+
+              </div>
             </div>
-
           </div>
-        </div>
+        </article>
+
+        <!-- DEMANDES CLIENTS -->
+        <article style="margin-bottom: 1.5rem;">
+
+          <!-- Premier fond blanc -->
+          <div class="px-6 pb-6 bg-white bg-opacity-10 rounded-lg">
+            <h2 class="text-yellow font-rosarivo font-semibold">Demandes clients</h2>
+
+            <!-- Deuxieme fond blanc autour des images et infos -->
+            <div class="bg-white bg-opacity-5 rounded-lg relative mx-auto p-6 flex items-center gap-6">
+
+              <div class="flex overflow-x-auto gap-6 px-4 py-4 scrollbar-hide">
+
+                <!-- Bouton d'ajout de livre aligné à droite -->
+                <button
+                  class="border-2 border-white rounded-lg w-[80px] h-[120px] flex items-center justify-center hover:bg-violet bg-opacity-30 transition">
+                  <i class='bx bx-plus text-white text-4xl'></i>
+                </button>
+
+
+                <!-- Livre 1 -->
+                <div class="flex flex-col items-center w-[100px] text-center ">
+                  <!-- Image du livre -->
+                  <div class="w-[80px] h-[120px] flex-shrink-0">
+                    <img src="./assets/Images/Livres/keleana.jpg" alt="KELEANA - L'assassineuse"
+                      class="w-full h-full rounded-md shadow-lg object-cover">
+                  </div>
+
+                  <!-- Informations du livre -->
+                  <h2 class="text-yellow font-semibold text-center mt-2 text-[10px] leading-tight">KELEANA - L'assassineuse</h2>
+                  <p class="text-white text-[8px] text-center mt-0.5">Je ne sais pas l'autrice</p>
+                  <div class="flex justify-center items-center gap-1 mt-1 bg-yellow rounded-full px-2 py-1">
+                    <img src="./assets/Images/Cards-Livres/Langues/icon-french.png" alt="France"
+                      class="w-4 h-4 rounded-full">
+                    <span class="text-black font-rosarivo text-[8px] rounded-md">Etat : Très bon</span>
+                  </div>
+                  <p class="text-white font-bold text-center text-sm mt-1">10,99€</p>
+                  <p class="text-[8px] text-white">
+                    <span class="text-semi-bold">Acheté:</span> 08/11/2024
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </article>
       </div>
+
     </section>
+
+    <!-- SECTION : ACHETEUR -->
+    <section class="mt-5 relative m-5 ">
+
+
+      <div class="flex">
+        <h1 class="text-yellow mb-4 font-rosarivo font-bold mr-3">Mon historique d'achat</h1>
+        <i class='bx bx-chevron-up text-yellow border-yellow border-2 rounded-full h-[1.5rem] w-[1.5rem] bg-transparent text-center toggle-chevron'
+          style="line-height: 1.4rem; vertical-align: middle; transition: transform 0.3s;"></i>
+      </div>
+      <!-- MON CONTENU A CACHER -->
+      <div class="toggle-content hidden ">
+
+        <!-- EN COURS -->
+        <article style="margin-bottom: 1.5rem;">
+
+          <!-- Premier fond blanc -->
+          <div class="px-6 pb-6 bg-white bg-opacity-10 rounded-lg">
+            <h2 class="text-yellow font-rosarivo font-semibold">Cette année</h2>
+
+            <!-- Deuxieme fond blanc autour des images et infos -->
+            <div class="bg-white bg-opacity-5 rounded-lg relative mx-auto p-6 flex items-center gap-6">
+
+              <div class="flex overflow-x-auto gap-6 px-4 py-4 scrollbar-hide">
+
+                <!-- Bouton d'ajout de livre aligné à droite -->
+                <button
+                  class="border-2 border-white rounded-lg w-[80px] h-[120px] flex items-center justify-center hover:bg-violet bg-opacity-30 transition">
+                  <i class='bx bx-plus text-white text-4xl'></i>
+                </button>
+
+
+                <!-- Livre 1 -->
+                <div class="flex flex-col items-center w-[100px] text-center ">
+                  <!-- Image du livre -->
+                  <div class="w-[80px] h-[120px] flex-shrink-0">
+                    <img src="./assets/Images/Livres/Nouveau-monde.jpg" alt="Du nouveau monde"
+                      class="w-full h-full rounded-md shadow-lg object-cover">
+                  </div>
+
+                  <!-- Informations du livre -->
+                  <h2 class="text-yellow font-semibold text-center mt-2 text-[10px] leading-tight">Du nouveau monde</h2>
+                  <p class="text-white text-[8px] text-center mt-0.5">Sarah J. Maas</p>
+                  <div class="flex justify-center items-center gap-1 mt-1 bg-yellow rounded-full px-2 py-1">
+                    <img src="./assets/Images/Cards-Livres/Langues/icon-french.png" alt="France"
+                      class="w-4 h-4 rounded-full">
+                    <span class="text-black font-rosarivo text-[8px] rounded-md">Etat : Bon</span>
+                  </div>
+                  <p class="text-white font-bold text-center text-sm mt-1">12,99€</p>
+                  <p class="text-[8px] text-white">
+                    <span class="text-semi-bold">Acheté :</span> 10/11/2024
+                  </p>
+                </div>
+
+                <!-- Livre 2 -->
+                <div class="flex flex-col items-center w-[100px] text-center">
+                  <!-- Image du livre -->
+                  <div class="w-[80px] h-[120px] flex-shrink-0">
+                    <img src="./assets/Images/Livres/la femme de ménage.jpg" alt="La femme de ménage"
+                      class="w-full h-full rounded-md shadow-lg object-cover">
+                  </div>
+
+                  <!-- Informations du livre -->
+                  <h2 class="text-yellow font-semibold text-center mt-2 text-[10px] leading-tight">La femme de ménage</h2>
+                  <p class="text-white text-[8px] text-center mt-0.5">Je ne sais pas l'autrice</p>
+                  <div class="flex justify-center items-center gap-1 mt-1 bg-yellow rounded-full px-2 py-1">
+                    <img src="./assets/Images/Cards-Livres/Langues/icon-french.png" alt="France"
+                      class="w-4 h-4 rounded-full">
+                    <span class="text-black font-rosarivo text-[8px] rounded-md">Etat : Acceptable</span>
+                  </div>
+                  <p class="text-white font-bold text-center text-sm mt-1">4,99€</p>
+                  <p class="text-[8px] text-white">
+                    <span class="text-semi-bold">Acheté :</span> 10/10/2024
+                  </p>
+                </div>
+
+        </article>
+      </div>
+
+    </section>
+
+
 
 
   </main>
