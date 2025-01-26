@@ -8,20 +8,26 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="./assets/CSS/output.css">
+  <link rel="stylesheet" href="./assets/CSS/AutreCSS/footer.css">
+
 
   <!-- JAVASCRIPT -->
-  <script defer src=""></script>
+  <script defer src="./assets/Javascript/header.js"></script>
+  <script defer src="./assets/Javascript/footer.js"></script>
 
   <!-- Lien de la police d'icônes -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 
 <body>
+  <!-- Inclusion de l'en-tête -->
+  <?php include_once './reusable/header.php'; ?>
+
   <main class="bg-violet p-6 min-h-screen flex items-center justify-center flex-col">
     
   <div class="text-center mb-4">
-            <div><img src="../Images/Logo-marron.png" alt="Logo une main tenant un livre formant un coeur" class="mx-auto"></div>
-            <div><img src="../Images/Mobile/Brand Logo.png" alt="BookMarket" class="mx-auto"></div>
+            <div><img src="./assets/Images/Logo-marron.png" alt="Logo une main tenant un livre formant un coeur" class="mx-auto"></div>
+            <div><img src="./assets/Images/Mobile/Brand Logo.png" alt="BookMarket" class="mx-auto"></div>
              <hr class="border-yellow my-4">
           </div>
 
@@ -46,6 +52,10 @@
       </p>
     </div>
   </main>
+
+  <!-- Inclusion du footer-->
+  <?php include_once './reusable/footer.php'; ?>
+
 </body>
 
 </html>

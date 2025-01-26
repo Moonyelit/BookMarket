@@ -2,26 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-.transition-transform {
-    transition: transform 0.5s;
-}
-
-.transition-opacity {
-    transition: opacity 0.5s;
-}
-
-.duration-500 {
-    transition-duration: 0.5s;
-}
-
-.-translate-y-full {
-    transform: translateY(-100%);
-}
-
-.translate-y-0 {
-    transform: translateY(0);
-}
-
-#additional-fields {
-    display: none;
-}

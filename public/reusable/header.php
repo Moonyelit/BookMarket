@@ -66,10 +66,12 @@
       <hr class="border-t-2 border-yellow my-4">
 
       <ul class="space-y-4">
-        <li><a href="#" class="block hover:underline">Accueil</a></li>
-        <li><a href="#" class="block hover:underline">À propos</a></li>
-        <li><a href="#" class="block hover:underline">Contact</a></li>
-        <li><a href="#" class="block hover:underline">Services</a></li>
+        <!-- A SUPPRIMER  -->
+        <li><a href="./home.php" class="block hover:underline">Accueil</a></li>
+        <li><a href="./login.php" class="block hover:underline">Login</a></li>
+        <li><a href="./register.php" class="block hover:underline">Register</a></li>
+        <li><a href="./detailsLivres.php" class="block hover:underline">Livres Détails</a></li>
+
       </ul>
     </nav>
 

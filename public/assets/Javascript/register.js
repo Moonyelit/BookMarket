@@ -1,26 +1,32 @@
-// ROLE CHANGE - ENTREPRISE
-document.getElementById('role').addEventListener('change', function () {
-    const additionalFields = document.getElementById('additional-fields');
-    console.log('Role changed to:', this.value); // Debugging message
-    if (this.value === 'vendeur' || this.value === 'les-deux') {
-        additionalFields.classList.remove('hidden');
-        console.log('Showing additional fields'); // Debugging message
-    } else {
-        additionalFields.classList.add('hidden');
-        console.log('Hiding additional fields'); // Debugging message
-    }
-});
-
-// MENU - ENTREPRISE
 document.addEventListener('DOMContentLoaded', function () {
   const roleSelect = document.getElementById('role');
   const additionalFields = document.getElementById('additional-fields');
-  console.log('Page loaded with role:', roleSelect.value); // Debugging message
-  if (roleSelect.value === 'les-deux') {
-    additionalFields.classList.remove('hidden');
-    console.log('Showing additional fields on load'); // Debugging message
-  } else {
-    additionalFields.classList.add('hidden');
-    console.log('Hiding additional fields on load'); // Debugging message
+
+  if (!roleSelect || !additionalFields) {
+      console.error("Les éléments n'ont pas été trouvés dans le DOM !");
+      return;
   }
+
+  function toggleAdditionalFields() {
+      console.log('Valeur sélectionnée:', roleSelect.value);
+
+      if (roleSelect.value === 'les-deux') {
+          additionalFields.classList.remove('hidden');
+          additionalFields.classList.add('active');
+          console.log('Classe "hidden" supprimée et "active" ajoutée');
+      } else {
+          additionalFields.classList.add('hidden');
+          additionalFields.classList.remove('active');
+          console.log('Classe "hidden" ajoutée et "active" supprimée');
+      }
+
+      console.log('Classes actuelles:', additionalFields.classList);
+      console.log('État de display:', getComputedStyle(additionalFields).display);
+  }
+
+  // Appliquer la logique au chargement de la page
+  toggleAdditionalFields();
+
+  // Ajouter un écouteur d'événements pour le changement de sélection
+  roleSelect.addEventListener('change', toggleAdditionalFields);
 });
