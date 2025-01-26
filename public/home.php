@@ -10,6 +10,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="./assets/CSS/output.css">
   <link rel="stylesheet" href="./assets/CSS/AutreCSS/hidescroll.css">
+  <link rel="stylesheet" href="./assets/CSS/AutreCSS/home.css">
   <link rel="stylesheet" href="./assets/CSS/AutreCSS/footer.css">
 
   <!-- JAVASCRIPT -->
@@ -29,39 +30,29 @@
 
   <main>
     <!-- SECTION : PRESENTATION SITE -->
-    <section class="relative flex justify-end items-end" style="margin-top: 5rem;">
+    <section class="mt-[3rem] flex justify-between relative">
 
-      <!-- Section texte -->
-      <div class="flex flex-col w-3/5 z-10 h-full" style="padding-left: 0rem;">
-        <div class="p-4 ml-8">
-          <h2 class="font-rosarivo text-white text-3xl mb-[-8px]">Bienvenue</h2>
-          <h1 class="flex justify-center items-center">
-            <img src="./assets/Images/Mobile/Brand Logo.png" alt="">
-          </h1>
+      <!-- ZONE DE TEXTE -->
+      <article class="flex flex-col z-10">
+        <div class="mt-[2.5rem] ml-[1.2rem] ">
+          <h1 class="text-white font-rosarivo text-[1rem] sm:text-[3.5rem] sm:mt-[3rem] leading-[-1rem]">Bienvenue</h1>
+
+          <h2 class="ml-[2rem]"><img src="./assets/Images/Brand Logo.svg" alt="Logo BookMarket"></h2>
         </div>
 
-        <div class="bg-yellow p-4 flex flex-col justify-center align-middle w-[100%] "
-     style="border-top-right-radius: 63%;">
-          <p class="font-rosarivo w-full text-sm leading-[2rem]" style="margin: 1rem 0;">
-            <span class="font-bold text-shadow-lg">Achetez </span>et
-            <span class="font-bold text-shadow-lg">revendez</span> vos livres d'occasion en toute simplicité !
-          </p>
-          <div class="flex flex-col justify-center">
-            <button
-              class="bg-brown text-yellow px-3 py-1 rounded-full w-[80%] hover:bg-violet hover:text-brown transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl">
-              Vends maintenant
-            </button>
-
-            <a href="#RAJOUTERLIEN" class="block text-[10px] underline mt-1">Découvrez comment ça marche</a>
-          </div>
+        <div class="bg-yellow p-3 flex flex-col justify-center align-middle font-rosarivo absolute bottom-0 w-[58%] sm:w-[48%]"
+          style="border-top-right-radius: 3.94rem;">
+          <p class=" text-[0.71rem] mb-[1rem] pr-3 leading-none sm:text-[1.2rem] lg:text-[1.8rem]"><span class="font-bold text-shadow-lg">Achetez</span> et <span class="font-bold text-shadow-lg">revendez</span> vos livres d'occasion en toute simplicité !</p>
+          <button class="bg-brown font-rosarivo text-white text-[0.8rem] px-3 -py-1 rounded-full -tracking-tighter sm:text-[1.5rem] lg:px-6 lg:py-2  hover:tracking-normal hover:bg-violet transition-all duration-300 ease-in-out">Vends maintenant</button>
+          <a href="#RAJOUTERLIEN" class="text-[0.37rem] underline mt-1 sm:text-[1rem] hover:text-brown">Découvrez comment ça marche</a>
         </div>
-      </div>
+      </article>
 
-      <!-- Image flottante -->
-      <img src="./assets/Images/Index/Livres image présentation copie 1.png"
-        alt="Livres image présentation avec halos lumineux"
-        class="relative bottom-0 right-0 w-[70%] max-w-[600px] h-auto z-0">
+      <img src="./assets/Images/Index/Livres image présentation copie 1@3x.svg" alt="Décorations avec des Livres" class="h-auto mt-[2rem] w-[55%] sm:max-w-[500px]">
+
+
     </section>
+
 
 
     <!-- SECTION 2 :  TOP DES VENTES -->
@@ -70,16 +61,16 @@
       <img src="./assets/Images/Index/DECO-section2.png" class="w-full h-[28rem]">
 
       <!-- Contenu superposé -->
-      <div class="mt-[3rem] absolute inset-0 flex flex-col py-4">
+      <div class="mt-[3rem] absolute inset-0 flex flex-col py-4 marginX"">
         <!-- Titre de la section -->
-        <h1 class="text-white text-[1.2rem] font-rosarivo ml-4 text-shadow-xl">Top des ventes</h1>
+        <h1 class="text-white text-[1.2rem] font-rosarivo ml-4 text-shadow-xl sm:text-[1.8rem]">Top des ventes</h1>
 
         <!-- Conteneur avec scroll horizontal -->
         <div class="flex overflow-x-auto gap-6 px-4 py-4 scrollbar-hide">
 
           <!-- Livre 1 -->
           <div
-            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between"
+            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between hover:scale-110 ease-in-out duration-300"
             style="border-radius: 12.6px;">
 
 
@@ -115,11 +106,11 @@
 
               <!-- Boutons -->
               <div class="flex justify-around mt-2">
-                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center">
-                  <i class='bx bx-heart text-black text-lg'></i>
+                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center hover:bg-violet transition-colors duration-300">
+                  <i class='bx bx-heart text-black hover:text-yellow text-lg'></i>
                 </button>
-                <button class="bg-yellow p-2 rounded-full w-6 h-6  flex items-center justify-center">
-                  <i class='bx bx-cart text-black text-lg'></i>
+                <button class="bg-yellow p-2 rounded-full w-6 h-6  flex items-center justify-center hover:bg-violet transition-colors duration-300">
+                  <i class='bx bx-cart text-black hover:text-yellow text- text-lg'></i>
                 </button>
               </div>
             </div>
@@ -127,7 +118,7 @@
 
           <!-- Livre 2 -->
           <div
-            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between"
+            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between hover:scale-110 ease-in-out duration-300"
             style="border-radius: 12.6px;">
 
             <!-- Note -->
@@ -162,11 +153,11 @@
 
               <!-- Boutons -->
               <div class="flex justify-around mt-2">
-                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center">
-                  <i class='bx bx-heart text-black text-lg'></i>
+                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center hover:bg-violet transition-colors duration-300">
+                  <i class='bx bx-heart text-black hover:text-yellow text-lg'></i>
                 </button>
-                <button class="bg-yellow p-2 rounded-full w-6 h-6  flex items-center justify-center">
-                  <i class='bx bx-cart text-black text-lg'></i>
+                <button class="bg-yellow p-2 rounded-full w-6 h-6  flex items-center justify-center hover:bg-violet transition-colors duration-300">
+                  <i class='bx bx-cart text-black hover:text-yellow text- text-lg'></i>
                 </button>
               </div>
             </div>
@@ -174,7 +165,7 @@
 
           <!-- Livre 3 -->
           <div
-            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between"
+            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between hover:scale-110 ease-in-out duration-300"
             style="border-radius: 12.6px;">
 
             <!-- Note -->
@@ -210,11 +201,11 @@
 
               <!-- Boutons -->
               <div class="flex justify-around mt-2">
-                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center">
-                  <i class='bx bx-heart text-black text-lg'></i>
+                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center hover:bg-violet transition-colors duration-300">
+                  <i class='bx bx-heart text-black hover:text-yellow text-lg'></i>
                 </button>
-                <button class="bg-yellow p-2 rounded-full w-6 h-6  flex items-center justify-center">
-                  <i class='bx bx-cart text-black text-lg'></i>
+                <button class="bg-yellow p-2 rounded-full w-6 h-6  flex items-center justify-center hover:bg-violet transition-colors duration-300">
+                  <i class='bx bx-cart text-black hover:text-yellow text- text-lg'></i>
                 </button>
               </div>
             </div>
@@ -222,7 +213,7 @@
 
           <!-- Livre 4 -->
           <div
-            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between"
+            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between hover:scale-110 ease-in-out duration-300"
             style="border-radius: 12.6px;">
 
             <!-- Note -->
@@ -256,11 +247,11 @@
 
               <!-- Boutons -->
               <div class="flex justify-around mt-2">
-                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center">
-                  <i class='bx bx-heart text-black text-lg'></i>
+                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center hover:bg-violet transition-colors duration-300">
+                  <i class='bx bx-heart text-black hover:text-yellow text-lg'></i>
                 </button>
-                <button class="bg-yellow p-2 rounded-full w-6 h-6  flex items-center justify-center">
-                  <i class='bx bx-cart text-black text-lg'></i>
+                <button class="bg-yellow p-2 rounded-full w-6 h-6  flex items-center justify-center hover:bg-violet transition-colors duration-300">
+                  <i class='bx bx-cart text-black hover:text-yellow text- text-lg'></i>
                 </button>
               </div>
             </div>
@@ -272,12 +263,12 @@
     </section>
 
     <!-- SECTION 3 :  NOTRE SELECTION DE LIVRES -->,
-    <section class="py-6">
+    <section class="py-6 marginX"">
       <!-- Titre de la section -->
-      <h1 class="text-yellow text-[1.2rem] font-rosarivo ml-4 text-shadow-xl">Notre sélection de livres</h1>
+      <h1 class="text-yellow text-[1.2rem] font-rosarivo ml-4 text-shadow-xl sm:text-[1.8rem]">Notre sélection de livres</h1>
 
       <!-- Mes Boutons selections de livres -->
-      <div class="relative">
+      <div class="relative md: flex justify-center">
         <div class="flex space-x-3 overflow-x-auto scrollbar-hide px-4 py-2">
           <button
             class="px-3 py-0.5 bg-transparent text-yellow border-2 border-yellow rounded-full text-xs font-normal hover:bg-yellow hover:text-brown transition duration-300">
@@ -321,7 +312,7 @@
 
           <!-- Livre 1 -->
           <div
-            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between"
+            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between hover:scale-110 ease-in-out duration-300"
             style="border-radius: 12.6px;">
 
 
@@ -361,11 +352,11 @@
 
               <!-- Boutons -->
               <div class="flex justify-around mt-2">
-                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center">
-                  <i class='bx bx-heart text-black text-lg'></i>
+                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center hover:bg-violet transition-colors duration-300">
+                  <i class='bx bx-heart text-black hover:text-yellow text-lg'></i>
                 </button>
-                <button class="bg-yellow p-2 rounded-full w-6 h-6  flex items-center justify-center">
-                  <i class='bx bx-cart text-black text-lg'></i>
+                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center hover:bg-violet transition-colors duration-300">
+                  <i class='bx bx-cart text-black hover:text-yellow  text-lg'></i>
                 </button>
               </div>
             </div>
@@ -373,7 +364,7 @@
 
           <!-- Livre 2 -->
           <div
-            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between"
+            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between hover:scale-110 ease-in-out duration-300"
             style="border-radius: 12.6px;">
 
             <!-- Note -->
@@ -410,11 +401,11 @@
 
               <!-- Boutons -->
               <div class="flex justify-around mt-2">
-                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center">
-                  <i class='bx bx-heart text-black text-lg'></i>
+                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center hover:bg-violet transition-colors duration-300">
+                  <i class='bx bx-heart text-black hover:text-yellow text-lg'></i>
                 </button>
-                <button class="bg-yellow p-2 rounded-full w-6 h-6  flex items-center justify-center">
-                  <i class='bx bx-cart text-black text-lg'></i>
+                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center hover:bg-violet transition-colors duration-300">
+                  <i class='bx bx-cart text-black hover:text-yellow  text-lg'></i>
                 </button>
               </div>
             </div>
@@ -422,7 +413,7 @@
 
           <!-- Livre 3 -->
           <div
-            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between"
+            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between hover:scale-110 ease-in-out duration-300"
             style="border-radius: 12.6px;">
 
             <!-- Note -->
@@ -459,11 +450,11 @@
 
               <!-- Boutons -->
               <div class="flex justify-around mt-2">
-                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center">
-                  <i class='bx bx-heart text-black text-lg'></i>
+                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center hover:bg-violet transition-colors duration-300">
+                  <i class='bx bx-heart text-black hover:text-yellow text-lg'></i>
                 </button>
-                <button class="bg-yellow p-2 rounded-full w-6 h-6  flex items-center justify-center">
-                  <i class='bx bx-cart text-black text-lg'></i>
+                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center hover:bg-violet transition-colors duration-300">
+                  <i class='bx bx-cart text-black hover:text-yellow  text-lg'></i>
                 </button>
               </div>
             </div>
@@ -471,7 +462,7 @@
 
           <!-- Livre 4 -->
           <div
-            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between"
+            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between hover:scale-110 ease-in-out duration-300"
             style="border-radius: 12.6px;">
 
             <!-- Note -->
@@ -510,11 +501,11 @@
 
               <!-- Boutons -->
               <div class="flex justify-around mt-2">
-                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center">
-                  <i class='bx bx-heart text-black text-lg'></i>
+                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center hover:bg-violet transition-colors duration-300">
+                  <i class='bx bx-heart text-black hover:text-yellow text-lg'></i>
                 </button>
-                <button class="bg-yellow p-2 rounded-full w-6 h-6  flex items-center justify-center">
-                  <i class='bx bx-cart text-black text-lg'></i>
+                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center hover:bg-violet transition-colors duration-300">
+                  <i class='bx bx-cart text-black hover:text-yellow  text-lg'></i>
                 </button>
               </div>
             </div>
@@ -527,7 +518,7 @@
 
           <!-- Livre 1 -->
           <div
-            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between"
+            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between hover:scale-110 ease-in-out duration-300"
             style="border-radius: 12.6px;">
 
 
@@ -567,11 +558,11 @@
 
               <!-- Boutons -->
               <div class="flex justify-around mt-2">
-                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center">
-                  <i class='bx bx-heart text-black text-lg'></i>
+                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center hover:bg-violet transition-colors duration-300">
+                  <i class='bx bx-heart text-black hover:text-yellow text-lg'></i>
                 </button>
-                <button class="bg-yellow p-2 rounded-full w-6 h-6  flex items-center justify-center">
-                  <i class='bx bx-cart text-black text-lg'></i>
+                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center hover:bg-violet transition-colors duration-300">
+                  <i class='bx bx-cart text-black hover:text-yellow  text-lg'></i>
                 </button>
               </div>
             </div>
@@ -579,7 +570,7 @@
 
           <!-- Livre 2 -->
           <div
-            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between"
+            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between hover:scale-110 ease-in-out duration-300"
             style="border-radius: 12.6px;">
 
             <!-- Note -->
@@ -616,19 +607,19 @@
 
               <!-- Boutons -->
               <div class="flex justify-around mt-2">
-                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center">
-                  <i class='bx bx-heart text-black text-lg'></i>
+                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center hover:bg-violet transition-colors duration-300">
+                  <i class='bx bx-heart text-black hover:text-yellow text-lg'></i>
                 </button>
-                <button class="bg-yellow p-2 rounded-full w-6 h-6  flex items-center justify-center">
-                  <i class='bx bx-cart text-black text-lg'></i>
+                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center hover:bg-violet transition-colors duration-300">
+                  <i class='bx bx-cart text-black hover:text-yellow  text-lg'></i>
                 </button>
               </div>
             </div>
           </div>
 
           <!-- Livre 3 -->
-          <di v
-            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between"
+          <div
+            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between hover:scale-110 ease-in-out duration-300"
             style="border-radius: 12.6px;">
 
             <!-- Note -->
@@ -665,19 +656,19 @@
 
               <!-- Boutons -->
               <div class="flex justify-around mt-2">
-                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center">
-                  <i class='bx bx-heart text-black text-lg'></i>
+                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center hover:bg-violet transition-colors duration-300">
+                  <i class='bx bx-heart text-black hover:text-yellow text-lg'></i>
                 </button>
-                <button class="bg-yellow p-2 rounded-full w-6 h-6  flex items-center justify-center">
-                  <i class='bx bx-cart text-black text-lg'></i>
+                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center hover:bg-violet transition-colors duration-300">
+                  <i class='bx bx-cart text-black hover:text-yellow  text-lg'></i>
                 </button>
               </div>
             </div>
-          </di>
+          </div>
 
           <!-- Livre 4 -->
           <div
-            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between"
+            class="relative bg-white bg-opacity-10 rounded-md backdrop-blur-md p-2 w-[100px] flex-shrink-0 h-auto flex flex-col justify-between hover:scale-110 ease-in-out duration-300"
             style="border-radius: 12.6px;">
 
             <!-- Note -->
@@ -716,11 +707,11 @@
 
               <!-- Boutons -->
               <div class="flex justify-around mt-2">
-                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center">
-                  <i class='bx bx-heart text-black text-lg'></i>
+                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center hover:bg-violet transition-colors duration-300">
+                  <i class='bx bx-heart text-black hover:text-yellow text-lg'></i>
                 </button>
-                <button class="bg-yellow p-2 rounded-full w-6 h-6  flex items-center justify-center">
-                  <i class='bx bx-cart text-black text-lg'></i>
+                <button class="bg-yellow p-2 rounded-full w-6 h-6 flex items-center justify-center hover:bg-violet transition-colors duration-300">
+                  <i class='bx bx-cart text-black hover:text-yellow  text-lg'></i>
                 </button>
               </div>
             </div>
@@ -732,7 +723,6 @@
 
 
     </section>
-
 
   </main>
 

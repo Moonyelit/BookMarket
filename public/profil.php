@@ -10,6 +10,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="./assets/CSS/output.css">
   <link rel="stylesheet" href="./assets/CSS/AutreCSS/footer.css">
+  <link rel="stylesheet" href="./assets/CSS/AutreCSS/profil.css">
   <!-- JAVASCRIPT -->
   <script defer src="./assets/Javascript/header.js"></script>
   <script defer src="./assets/Javascript/footer.js"></script>
@@ -25,17 +26,19 @@
   <!-- Inclusion de l'en-tête -->
   <?php include_once './reusable/header.php'; ?>
 
-  <main>
+  <main class="marginX">
 
 
     <!-- SECTION : PROFIL STANDARD -->
     <section class="bg-yellow p-6 m-[2rem] rounded-lg">
-      <div class="flex flex-col justify-between items-center md:flex-row">
+      <div class="flex flex-col justify-between md:flex-row">
 
         <!-- PHOTO DE PROFIL ORDINATEUR -->
         <div class="relative flex flex-col items-center  md:hidden">
-          <div
-            class="w-36 h-36 md:w-40 md:h-40 rounded-full overflow-hidden border-2 border-gray-500 shadow-lg relative">
+          <img src="./assets/Images/Profil/Arabesque.svg" alt="Décoration arabesque" class="w-[500px] h-auto absolute">
+
+
+          <div class="w-36 h-36 md:w-40 md:h-40 rounded-full overflow-hidden border-2 border-black shadow-lg relative">
             <img src="assets/Images/Profil/Icone profil.png" alt="Photo de profil"
               class="w-full h-full object-cover object-center">
 
@@ -62,12 +65,18 @@
             <li><span style="font-weight: bold;">Adresse :</span> 12 rue des lilas </li>
             <li><span style="font-weight: bold;">Code postal :</span> 75020</li>
             <li><span style="font-weight: bold;">Ville :</span> Paris</li>
-            <hr style="border: none; border-top: 1px solid #000; margin: 1rem 0;">
-            <li><span style="font-weight: bold;">Nom entreprise :</span> MartinMatin</li>
-            <li><span style="font-weight: bold;">Téléphone :</span>06 12 34 56 78</li>
-            <li><span style="font-weight: bold;">Adresse :</span> Adresse Aléatoire </li>
-            <li><span style="font-weight: bold;">Code postal :</span> 75020</li>
-            <li><span style="font-weight: bold;">Ville :</span> Paris</li>
+
+
+            <!-- METTRE UNE CLASSE HIDDEN EN FONCTION DU ROLE -->
+            <div>
+              <hr style="border: none; border-top: 1px solid #000; margin: 1rem 0;">
+              <li><span style="font-weight: bold;">Nom entreprise :</span> MartinMatin</li>
+              <li><span style="font-weight: bold;">Téléphone :</span>06 12 34 56 78</li>
+              <li><span style="font-weight: bold;">Adresse :</span> Adresse Aléatoire </li>
+              <li><span style="font-weight: bold;">Code postal :</span> 75020</li>
+              <li><span style="font-weight: bold;">Ville :</span> Paris</li>
+            </div>
+
 
           </ul>
         </div>
@@ -96,16 +105,18 @@
 
 
     <!-- SECTION : VENDEUR -->
-    <section class="mt-5 relative m-5 ">
+    <section class="mt-5 relative m-5" id="vendeur-section" style="margin-bottom: 10rem;">
 
-
+      <!-- Mon titre -->
       <div class="flex">
         <h1 class="text-yellow mb-4 font-rosarivo font-bold mr-3">Mes Annonces</h1>
         <i class='bx bx-chevron-up text-yellow border-yellow border-2 rounded-full h-[1.5rem] w-[1.5rem] bg-transparent text-center toggle-chevron'
           style="line-height: 1.4rem; vertical-align: middle; transition: transform 0.3s;"></i>
       </div>
+
+
       <!-- MON CONTENU A CACHER -->
-      <div class="toggle-content hidden">
+      <article class="toggle-content hidden">
 
         <!-- EN COURS -->
         <article style="margin-bottom: 1.5rem;">
@@ -120,6 +131,8 @@
               <div class="flex overflow-x-auto gap-6 px-4 py-4 scrollbar-hide">
 
                 <!-- Bouton d'ajout de livre aligné à droite -->
+
+                <!-- Bouton d'ajout de livre aligné à droite -->
                 <button
                   class="border-2 border-white rounded-lg w-[80px] h-[120px] flex items-center justify-center hover:bg-violet bg-opacity-30 transition">
                   <i class='bx bx-plus text-white text-4xl'></i>
@@ -127,30 +140,33 @@
 
 
                 <!-- Livre 1 -->
-                <div class="flex flex-col items-center w-[100px] text-center ">
+                <div
+                  class="flex flex-col items-center w-[100px] text-center hover:scale-110 ease-in-out transition-transform">
                   <!-- Image du livre -->
                   <div class="w-[80px] h-[120px] flex-shrink-0">
-                    <img src="./assets/Images/Livres/Palais-de-roses.jpg" alt="Un palais d'épines et de roses"
+                    <img src="./assets/Images/Livres/Palais-de-roses.jpg" alt="Un palais de roses et d'épines"
                       class="w-full h-full rounded-md shadow-lg object-cover">
                   </div>
 
                   <!-- Informations du livre -->
-                  <h2 class="text-yellow font-semibold text-center mt-2 text-[10px] leading-tight">Un palais d'épines et
-                    de roses</h2>
+                  <h2 class="text-yellow font-semibold text-center mt-2 text-[10px] leading-tight">
+                    Un palais de roses et d'épines</h2>
+
                   <p class="text-white text-[8px] text-center mt-0.5">Sarah J. Maas</p>
                   <div class="flex justify-center items-center gap-1 mt-1 bg-yellow rounded-full px-2 py-1">
                     <img src="./assets/Images/Cards-Livres/Langues/icon-french.png" alt="France"
                       class="w-4 h-4 rounded-full">
                     <span class="text-black font-rosarivo text-[8px] rounded-md">Etat : Très bon</span>
                   </div>
-                  <p class="text-white font-bold text-center text-sm mt-1">12,99€</p>
+                  <p class="text-white font-bold text-center text-sm mt-1">10,99€</p>
                   <p class="text-[8px] text-white">
-                    <span class="text-semi-bold">Mise en ligne :</span> 08/11/2024
+                    <span class="text-semi-bold">Mis en ligne:</span> 08/11/2024
                   </p>
                 </div>
 
                 <!-- Livre 2 (Exemple) -->
-                <div class="flex flex-col items-center w-[100px] text-center">
+                <div
+                  class="flex flex-col items-center w-[100px] text-center hover:scale-110 ease-in-out transition-transform">
                   <!-- Image du livre -->
                   <div class="w-[80px] h-[120px] flex-shrink-0">
                     <img src="./assets/Images/Livres/1984.jpg" alt="1984"
@@ -172,7 +188,8 @@
                 </div>
 
                 <!-- Livre 3 -->
-                <div class="flex flex-col items-center w-[100px] text-center ">
+                <div
+                  class="flex flex-col items-center w-[100px] text-center hover:scale-110 ease-in-out transition-transform">
                   <!-- Image du livre -->
                   <div class="w-[80px] h-[120px] flex-shrink-0">
                     <img src="./assets/Images/Livres/Kevin.jpg" alt="Il faut qu'on parle de Kevin"
@@ -195,7 +212,8 @@
                 </div>
 
                 <!-- Livre 4 -->
-                <div class="flex flex-col items-center w-[100px] text-center ">
+                <div
+                  class="flex flex-col items-center w-[100px] text-center hover:scale-110 ease-in-out transition-transform">
                   <!-- Image du livre -->
                   <div class="w-[80px] h-[120px] flex-shrink-0">
                     <img src="./assets/Images/Livres/Fatherland.jpg" alt="Fatherland"
@@ -221,9 +239,8 @@
           </div>
         </article>
 
-
-         <!-- VOS VENTES -->
-         <article style="margin-bottom: 1.5rem;">
+        <!-- VOS VENTES -->
+        <article style="margin-bottom: 1.5rem;">
 
           <!-- Premier fond blanc -->
           <div class="px-6 pb-6 bg-white bg-opacity-10 rounded-lg">
@@ -250,7 +267,9 @@
                   </div>
 
                   <!-- Informations du livre -->
-                  <h2 class="text-yellow font-semibold text-center mt-2 text-[10px] leading-tight">Les piliers de la Terre</h2>
+                  <h2 class="text-yellow font-semibold text-center mt-2 text-[10px] leading-tight">Les piliers de la
+                    Terre
+                  </h2>
                   <p class="text-white text-[8px] text-center mt-0.5">Ken Follet</p>
                   <div class="flex justify-center items-center gap-1 mt-1 bg-yellow rounded-full px-2 py-1">
                     <img src="./assets/Images/Cards-Livres/Langues/icon-french.png" alt="France"
@@ -272,7 +291,9 @@
                   </div>
 
                   <!-- Informations du livre -->
-                  <h2 class="text-yellow font-semibold text-center mt-2 text-[10px] leading-tight">Le meilleur des mondes</h2>
+                  <h2 class="text-yellow font-semibold text-center mt-2 text-[10px] leading-tight">Le meilleur des
+                    mondes
+                  </h2>
                   <p class="text-white text-[8px] text-center mt-0.5">Adlous Huxley</p>
                   <div class="flex justify-center items-center gap-1 mt-1 bg-yellow rounded-full px-2 py-1">
                     <img src="./assets/Images/Cards-Livres/Langues/icon-french.png" alt="France"
@@ -318,7 +339,8 @@
                   </div>
 
                   <!-- Informations du livre -->
-                  <h2 class="text-yellow font-semibold text-center mt-2 text-[10px] leading-tight">KELEANA - L'assassineuse</h2>
+                  <h2 class="text-yellow font-semibold text-center mt-2 text-[10px] leading-tight">KELEANA -
+                    L'assassineuse</h2>
                   <p class="text-white text-[8px] text-center mt-0.5">Je ne sais pas l'autrice</p>
                   <div class="flex justify-center items-center gap-1 mt-1 bg-yellow rounded-full px-2 py-1">
                     <img src="./assets/Images/Cards-Livres/Langues/icon-french.png" alt="France"
@@ -335,21 +357,27 @@
             </div>
           </div>
         </article>
-      </div>
+   
 
+        
+      </article>
     </section>
+
+
 
     <!-- SECTION : ACHETEUR -->
     <section class="mt-5 relative m-5 ">
 
-
+      <!-- Mon titre -->
       <div class="flex">
         <h1 class="text-yellow mb-4 font-rosarivo font-bold mr-3">Mon historique d'achat</h1>
         <i class='bx bx-chevron-up text-yellow border-yellow border-2 rounded-full h-[1.5rem] w-[1.5rem] bg-transparent text-center toggle-chevron'
           style="line-height: 1.4rem; vertical-align: middle; transition: transform 0.3s;"></i>
       </div>
+
+
       <!-- MON CONTENU A CACHER -->
-      <div class="toggle-content hidden">
+      <article class="toggle-content hidden">
 
         <!-- EN COURS -->
         <article style="margin-bottom: 1.5rem;">
@@ -371,16 +399,19 @@
 
 
                 <!-- Livre 1 -->
-                <div class="flex flex-col items-center w-[100px] text-center ">
+                <div div
+                  class="flex flex-col items-center w-[100px] text-center hover:scale-110 ease-in-out transition-transform">
                   <!-- Image du livre -->
                   <div class="w-[80px] h-[120px] flex-shrink-0">
-                    <img src="./assets/Images/Livres/Nouveau-monde.jpg" alt="Du nouveau monde"
+                    <img src="./assets/Images/Livres/Nouveau-monde.jpg" alt="Un palais de roses et d'épines"
                       class="w-full h-full rounded-md shadow-lg object-cover">
                   </div>
 
                   <!-- Informations du livre -->
-                  <h2 class="text-yellow font-semibold text-center mt-2 text-[10px] leading-tight">Du nouveau monde</h2>
-                  <p class="text-white text-[8px] text-center mt-0.5">Sarah J. Maas</p>
+                  <h2 class="text-yellow font-semibold text-center mt-2 text-[10px] leading-tight">
+                    Du nouveau monde - Tome 1</h2>
+
+                  <p class="text-white text-[8px] text-center mt-0.5">Yusuke Kishi</p>
                   <div class="flex justify-center items-center gap-1 mt-1 bg-yellow rounded-full px-2 py-1">
                     <img src="./assets/Images/Cards-Livres/Langues/icon-french.png" alt="France"
                       class="w-4 h-4 rounded-full">
@@ -388,12 +419,13 @@
                   </div>
                   <p class="text-white font-bold text-center text-sm mt-1">12,99€</p>
                   <p class="text-[8px] text-white">
-                    <span class="text-semi-bold">Acheté :</span> 10/11/2024
+                    <span class="text-semi-bold">Acheté le:</span> 10/11/2024
                   </p>
                 </div>
 
                 <!-- Livre 2 -->
-                <div class="flex flex-col items-center w-[100px] text-center">
+                <div
+                  class="flex flex-col items-center w-[100px] text-center hover:scale-110 ease-in-out transition-transform">
                   <!-- Image du livre -->
                   <div class="w-[80px] h-[120px] flex-shrink-0">
                     <img src="./assets/Images/Livres/la femme de ménage.jpg" alt="La femme de ménage"
@@ -401,8 +433,9 @@
                   </div>
 
                   <!-- Informations du livre -->
-                  <h2 class="text-yellow font-semibold text-center mt-2 text-[10px] leading-tight">La femme de ménage</h2>
-                  <p class="text-white text-[8px] text-center mt-0.5">Je ne sais pas l'autrice</p>
+                  <h2 class="text-yellow font-semibold text-center mt-2 text-[10px] leading-tight">La femme de ménage
+                  </h2>
+                  <p class="text-white text-[8px] text-center mt-0.5">Freida McFadden</p>
                   <div class="flex justify-center items-center gap-1 mt-1 bg-yellow rounded-full px-2 py-1">
                     <img src="./assets/Images/Cards-Livres/Langues/icon-french.png" alt="France"
                       class="w-4 h-4 rounded-full">
@@ -410,15 +443,18 @@
                   </div>
                   <p class="text-white font-bold text-center text-sm mt-1">4,99€</p>
                   <p class="text-[8px] text-white">
-                    <span class="text-semi-bold">Acheté :</span> 10/10/2024
+                    <span class="text-semi-bold">Acheté le :</span> 11/10/2024
                   </p>
                 </div>
 
+              </div>
+            </div>
+          </div>
         </article>
-      </div>
 
+
+      </article>
     </section>
-
 
 
 
