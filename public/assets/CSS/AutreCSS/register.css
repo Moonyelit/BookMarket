@@ -1,10 +1,19 @@
 #additional-fields {
+    display: none !important;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+#additional-fields.active {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
-    transition: opacity 0.5s ease-in-out;
 }
 
+.hidden {
+    display: none !important;
+}
 
 .transition-transform {
     transition: transform 0.5s;
@@ -26,8 +35,5 @@
     transform: translateY(0);
 }
 
-.hidden {
-    display: none;
-}
 
 

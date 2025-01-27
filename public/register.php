@@ -23,14 +23,14 @@
 
 </head>
 
-<body>
+<body class="bg-violet">
 
   <!-- Inclusion de l'en-tête -->
   <?php include_once './reusable/header.php'; ?>
 
-  <main class="bg-violet p-6 min-h-screen flex items-center justify-center flex-col">
+  <main class="p-6 min-h-screen flex items-center justify-center flex-col">
 
-    <div class="text-center mb-4">
+    <div class="text-center mb-4" style="margin-top: 6rem;">
       <div><img src="./assets/Images/Logo-marron.png" alt="Logo une main tenant un livre formant un coeur" class="mx-auto"></div>
       <div><img src="./assets/Images/Mobile/Brand Logo.png" alt="BookMarket" class="mx-auto"></div>
       <hr class="border-yellow my-4">
@@ -107,28 +107,28 @@
             <option value="les-deux" <?php echo isset($_POST['role']) && $_POST['role'] === 'les-deux' ? 'selected' : ''; ?>>Acheteur et Vendeur</option>
           </select>
         </div>
-        <div id="additional-fields" class="space-y-4">
-        <div>
-            <label for="entreprise" class="block text-yellow mb-1">Nom de l'entreprise</label>
-            <input type="text" id="entreprise" name="entreprise" class="w-full p-2 rounded bg-white text-black" maxlength="30" value="<?php echo isset($_POST['entreprise']) ? htmlspecialchars($_POST['entreprise']) : ''; ?>">
-          </div>
-          <div>
-            <label for="telephone-vendeur" class="block text-yellow mb-1">Numéro de téléphone</label>
-            <input type="tel" id="telephone-vendeur" name="telephone-vendeur" class="w-full p-2 rounded bg-white text-black" maxlength="30" value="<?php echo isset($_POST['telephone-vendeur']) ? htmlspecialchars($_POST['telephone-vendeur']) : ''; ?>">
-          </div>
-          <div>
-            <label for="adresse-vendeur" class="block text-yellow mb-1">Adresse</label>
-            <input type="text" id="adresse-vendeur" name="adresse-vendeur" class="w-full p-2 rounded bg-white text-black" maxlength="30" value="<?php echo isset($_POST['adresse-vendeur']) ? htmlspecialchars($_POST['adresse-vendeur']) : ''; ?>">
-          </div>
-          <div>
-            <label for="code-postal-vendeur" class="block text-yellow mb-1">Code postal</label>
-            <input type="text" id="code-postal-vendeur" name="code-postal-vendeur" class="w-full p-2 rounded bg-white text-black" maxlength="30" value="<?php echo isset($_POST['code-postal-vendeur']) ? htmlspecialchars($_POST['code-postal-vendeur']) : ''; ?>">
-          </div>
-          <div>
-            <label for="pays-vendeur" class="block text-yellow mb-1">Pays</label>
-            <input type="text" id="pays-vendeur" name="pays-vendeur" class="w-full p-2 rounded bg-white text-black" maxlength="30" value="<?php echo isset($_POST['pays-vendeur']) ? htmlspecialchars($_POST['pays-vendeur']) : ''; ?>">
-          </div>
-        </div>
+        <div id="additional-fields" class="space-y-4 hidden">
+    <div>
+        <label for="entreprise" class="block text-yellow mb-1">Nom de l'entreprise</label>
+        <input type="text" id="entreprise" name="entreprise" class="w-full p-2 rounded bg-white text-black" maxlength="30" value="<?php echo isset($_POST['entreprise']) ? htmlspecialchars($_POST['entreprise']) : ''; ?>">
+    </div>
+    <div>
+        <label for="telephone-vendeur" class="block text-yellow mb-1">Numéro de téléphone</label>
+        <input type="tel" id="telephone-vendeur" name="telephone-vendeur" class="w-full p-2 rounded bg-white text-black" maxlength="30" value="<?php echo isset($_POST['telephone-vendeur']) ? htmlspecialchars($_POST['telephone-vendeur']) : ''; ?>">
+    </div>
+    <div>
+        <label for="adresse-vendeur" class="block text-yellow mb-1">Adresse</label>
+        <input type="text" id="adresse-vendeur" name="adresse-vendeur" class="w-full p-2 rounded bg-white text-black" maxlength="30" value="<?php echo isset($_POST['adresse-vendeur']) ? htmlspecialchars($_POST['adresse-vendeur']) : ''; ?>">
+    </div>
+    <div>
+        <label for="code-postal-vendeur" class="block text-yellow mb-1">Code postal</label>
+        <input type="text" id="code-postal-vendeur" name="code-postal-vendeur" class="w-full p-2 rounded bg-white text-black" maxlength="30" value="<?php echo isset($_POST['code-postal-vendeur']) ? htmlspecialchars($_POST['code-postal-vendeur']) : ''; ?>">
+    </div>
+    <div>
+        <label for="pays-vendeur" class="block text-yellow mb-1">Pays</label>
+        <input type="text" id="pays-vendeur" name="pays-vendeur" class="w-full p-2 rounded bg-white text-black" maxlength="30" value="<?php echo isset($_POST['pays-vendeur']) ? htmlspecialchars($_POST['pays-vendeur']) : ''; ?>">
+    </div>
+</div>
         <button type="submit" class="w-full bg-yellow text-brown py-2 rounded-full font-bold hover:bg-yellow-600">S'inscrire</button>
       </form>
       <p class="text-yellow mt-4 text-center">
@@ -137,13 +137,13 @@
     </div>
 
 
-    <!-- Inclusion du footer-->
-    <?php include_once './reusable/footer.php'; ?>
+  
 
 
   </main>
 
-
+  <!-- Inclusion du footer-->
+    <?php include_once './reusable/footer.php'; ?>
 
 </body>
 

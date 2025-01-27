@@ -70,6 +70,7 @@
         <li><a href="./home.php" class="block hover:underline">Accueil</a></li>
         <li><a href="./login.php" class="block hover:underline">Login</a></li>
         <li><a href="./register.php" class="block hover:underline">Register</a></li>
+        <li><a href="./profil.php" class="block hover:underline">Profil</a></li>
         <li><a href="./detailsLivres.php" class="block hover:underline">Livres Détails</a></li>
 
       </ul>

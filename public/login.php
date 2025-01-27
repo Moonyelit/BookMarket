@@ -19,11 +19,11 @@
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-violet">
   <!-- Inclusion de l'en-tête -->
   <?php include_once './reusable/header.php'; ?>
 
-  <main class="bg-violet p-6 min-h-screen flex items-center justify-center flex-col">
+  <main class=" p-6 min-h-screen flex items-center justify-center flex-col">
     
   <div class="text-center mb-4">
             <div><img src="./assets/Images/Logo-marron.png" alt="Logo une main tenant un livre formant un coeur" class="mx-auto"></div>
@@ -53,9 +53,9 @@
     </div>
   </main>
 
+
   <!-- Inclusion du footer-->
   <?php include_once './reusable/footer.php'; ?>
-
 </body>
 
 </html>

@@ -30,7 +30,7 @@
 
 
     <!-- SECTION : PROFIL STANDARD -->
-    <section class="bg-yellow p-6 m-[2rem] rounded-lg">
+    <section class="bg-yellow p-6 m-[2rem] rounded-lg" style="margin-top: 6rem;"">
       <div class="flex flex-col justify-between md:flex-row">
 
         <!-- PHOTO DE PROFIL ORDINATEUR -->
