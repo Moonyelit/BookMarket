@@ -1,4 +1,4 @@
- <?php
+<?php
 
     class User
     {
@@ -7,13 +7,13 @@
         private string $lastName;
         private string $firstName;
         private string $pseudo;
-        private string $email;
+        private string $mail;
         private string $password;
         private string $phoneNumber;
         private Role $role;
         private bool $isPro;
         private Adresses $personalAdress;
-        private ?string $nampeCompany;
+        private ?string $nameCompany;
         private ?string $phoneNumberCompany;
         private ?Adresses $companyAdress;
 
@@ -26,13 +26,13 @@
             string $lastName,
             string $firstName,
             string $pseudo,
-            string $email,
+            string $mail,
             string $password,
             string $phoneNumber,
             Role $role,
             bool $isPro,
             Adresses $personalAdress,
-            ?string $nampeCompany,
+            ?string $nameCompany,
             ?string $phoneNumberCompany,
             ?Adresses $companyAdress
         ) {
@@ -41,23 +41,37 @@
             $this->lastName = $lastName;
             $this->firstName = $firstName;
             $this->pseudo = $pseudo;
-            $this->email = $email;
+            $this->mail = $mail;
             $this->password = password_hash($password, PASSWORD_DEFAULT);
             $this->phoneNumber = $phoneNumber;
             $this->role = $role;
             $this->isPro = $isPro;
             $this->personalAdress = $personalAdress;
-            $this->nampeCompany = $nampeCompany;
+            $this->nameCompany = $nameCompany;
             $this->phoneNumberCompany = $phoneNumberCompany;
             $this->companyAdress = $companyAdress ?? $personalAdress;
         }
 
 
         //Getters
-
-        public function getFullName(): string
+        public function getId(): ?int
         {
-            return $this->firstName . ' ' . $this->lastName;
+            return $this->id;
+        }
+
+        public function getImage(): ?string
+        {
+            return $this->image;
+        }
+
+        public function getLastName(): string
+        {
+            return $this->lastName;
+        }
+
+        public function getFirstName(): string
+        {
+            return $this->firstName;
         }
 
         public function getPseudo(): string
@@ -65,9 +79,19 @@
             return $this->pseudo;
         }
 
-        public function getEmail(): string
+        public function getMail(): string
         {
-            return $this->email;
+            return $this->mail;
+        }
+
+        public function getPassword(): string
+        {
+            return $this->password;
+        }
+
+        public function getphoneNumber(): string
+        {
+            return $this->phoneNumber;
         }
 
         public function getRole(): Role
@@ -85,9 +109,15 @@
             return $this->personalAdress;
         }
 
-        public function getNampeCompany(): ?string
+        public function getNameCompany(): ?string
         {
-            return $this->nampeCompany;
+            return $this->nameCompany;
+        }
+
+        public function setNameCompany(?string $nameCompany): self
+        {
+            $this->nameCompany = $nameCompany;
+            return $this;
         }
 
         public function getPhoneNumberCompany(): ?string
