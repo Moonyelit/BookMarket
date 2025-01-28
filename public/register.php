@@ -44,7 +44,7 @@
           <?php echo htmlspecialchars($_GET['error']); ?>
         </div>
       <?php endif; ?>
-      <form id="registration-form" action="../../BACK-END/process/userInscription.php" method="POST" class="space-y-4" enctype="multipart/form-data">
+      <form id="registration-form" action="../process/userInscription.php" method="POST" class="space-y-4" enctype="multipart/form-data">
         <div>
           <label for="nom" class="block text-yellow mb-1">Nom</label>
           <input type="text" id="nom" name="nom" class="w-full p-2 rounded bg-white text-black" required pattern="[A-Za-zÀ-ÿ '-]+" maxlength="30" value="<?php echo isset($_POST['nom']) ? htmlspecialchars($_POST['nom']) : ''; ?>">

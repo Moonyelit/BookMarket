@@ -10,7 +10,7 @@ function sanitize_input($data) {
 // Fonction de redirection avec conservation des valeurs des champs
 function redirect_with_error($error) {
     $query = http_build_query(array_merge($_POST, ['error' => $error]));
-    header("Location: ../../FRONT-END/PHP/register.php?$query");
+    header("Location: ../public/register.php?$query");
     exit;
 }
 
@@ -20,30 +20,16 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 
 // Regarde que tous les inputs existent
-if (
-    !isset(
-        $_POST['nom'],
-        $_POST['prenom'],
-        $_POST['pseudo'],
-        $_POST['email'],
-        $_POST['telephone'],
-        $_POST['password'],
-        $_POST['confirm-password'],
-        $_POST['role'],
-        $_POST['adresse'],
-        $_POST['code-postal'],
-        $_POST['pays']
-    )
-) {
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     redirect_with_error("Tous les champs requis ne sont pas présents.");
 }
 
-// Vérifie que les inputs ne soient pas vides et ne dépassent pas 30 caractères
-foreach ($_POST as $key => $value) {
-    if (empty($value) || strlen($value) > 30) {
-        redirect_with_error("Le champ $key est vide ou dépasse 30 caractères.");
+// Regarde que tous les inputs existent
+$requiredFields = ['nom', 'prenom', 'pseudo', 'email', 'telephone', 'password', 'confirm-password', 'role', 'adresse', 'code-postal', 'pays'];
+foreach ($requiredFields as $field) {
+    if (!isset($_POST[$field])) {
+        redirect_with_error("Tous les champs requis ne sont pas présents.");
     }
-    $_POST[$key] = sanitize_input($value);
 }
 
 // Vérifie la conformité de l'email
@@ -53,16 +39,12 @@ if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
 
 // Vérifie si l'email existe déjà dans la base de données
 try {
-    $conn = new PDO("mysql:host=$host;dbname=$db;charset=utf8", $user, $pass);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-    $emailCheckStmt = $conn->prepare("SELECT COUNT(*) FROM user WHERE mail = ?");
-    $emailCheckStmt->execute([$_POST['email']]);
-    $emailCount = $emailCheckStmt->fetchColumn();
-
-    if ($emailCount > 0) {
+    $userRepository = new UserRepository();
+    if ($userRepository->findByEmail($_POST['email'])) {
         redirect_with_error("Cette adresse e-mail est déjà utilisée.");
     }
+
+
 } catch (PDOException $e) {
     redirect_with_error("Erreur: " . $e->getMessage());
 }
@@ -73,7 +55,7 @@ if ($_POST['password'] !== $_POST['confirm-password']) {
 }
 
 // Vérifie et traite l'upload de l'image de profil si présente
-$imageUrl = '../../FRONT-END/Images/Profil/Icone profil.png'; //
+$imageUrl = '../public/assets/Images/ '; //
 $uploadDir = '../../FRONT-END/uploads/';
 if (isset($_FILES['profile-image']) && $_FILES['profile-image']['error'] === UPLOAD_ERR_OK) {
     $fileTmpPath = $_FILES['profile-image']['tmp_name'];
@@ -103,7 +85,7 @@ $adresse_vendeur = null;
 $code_postal_vendeur = null;
 $pays_vendeur = null;
 
-if ($_POST['role'] === 'vendeur' || $_POST['role'] === 'les-deux') {
+if ($_POST['role'] === 'les-deux') {
     if (
         !isset(
             $_POST['entreprise']
@@ -176,7 +158,7 @@ try {
         'role' => $_POST['role']
     ];
 
-    header('Location: /Fil%20Rouge/FRONT-END/HTML/index.html');
+    header('Location: ./home.php');
     exit;
 } catch (PDOException $e) {
     redirect_with_error("Erreur: " . $e->getMessage());
