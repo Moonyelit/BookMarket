@@ -1,5 +1,6 @@
 <?php
-include_once("../dataBase/config.php");
+require_once("../utils/autoloader.php");
+
 
 // Fonction de sanitisation
 function sanitize_input($data) {

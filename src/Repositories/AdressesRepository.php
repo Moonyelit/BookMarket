@@ -20,4 +20,26 @@ final class AdressesRepository extends AbstractRepository
         ]);
     }
 
+public function updateAdress(Adresses $adress): void
+{
+    $sql = "UPDATE adresses 
+        SET street = :street,
+            city = :city,
+            postal_code = :postal_code,
+            country = :country
+        WHERE id = :id";
+    $stmt = $this->pdo->prepare($sql);
+    $stmt->execute([
+        'street' => $adress->getStreet(),
+        'city' => $adress->getCity(),
+        'postal_code' => $adress->getPostalCode(),
+        'country' => $adress->getCountry(),
+        'id' => $adress->getId()
+    ]);
+
+}
+
+
+
+
 }

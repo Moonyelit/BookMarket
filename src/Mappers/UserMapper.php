@@ -16,7 +16,7 @@ class UserMapper
             $datas['mail'],
             $datas['password'],
             $datas['phoneNumber'],
-            new Role($datas['role_id'], $datas['role_name']),
+            new Role($datas['id'], $datas['identity']),
             $isPro,
             $Adresses[0] ?? null,
             $datas['nameCompany'] ?? null,
